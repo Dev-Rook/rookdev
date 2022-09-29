@@ -1,5 +1,5 @@
 .Nav {
-  border: 1px solid white;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
   display: flex;
 
   padding: 5px;
@@ -15,12 +15,38 @@
   z-index: 100;
 
   .Left_Side {
-    border: 1px solid black;
     display: flex;
 
     padding: 5px;
+    gap: 20px;
     justify-content: space-between;
     align-items: center;
+
+    .Logo_Container {
+      box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px,
+        rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+        rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+      border: 2px solid rgb(255, 122, 0);
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      transition: 0.5s;
+
+      .Logo {
+        box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px,
+          rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+          rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+        height: 100%;
+        width: 100%;
+        margin: auto;
+        object-fit: cover;
+        transition: 0.5s;
+      }
+    }
 
     .Brand {
       color: white;
@@ -32,7 +58,6 @@
   }
 
   .Right_Side {
-    border: 1px solid black;
     display: flex;
 
     gap: 20px;
@@ -40,7 +65,6 @@
     align-items: center;
 
     .Navlink_Container {
-      border: 1px solid black;
       display: flex;
 
       padding: 5px;
@@ -49,20 +73,27 @@
       align-items: center;
 
       .NavItem {
-
         .Navlink {
           color: white;
           font-family: sans-serif;
           font-size: 15px;
           font-weight: 400;
         }
+
+        .Navlink:hover {
+          border-bottom: 1px solid rgb(255, 122, 0);
+          // -180px 0px 0px 1px inset
+        }
       }
     }
 
     .Menu_Icon {
+      border: 1px solid rgba(240, 231, 219, 0.5);
+      border-radius: 3px;
+      padding: 3px;
       display: none;
-      height: 25px;
-      width: 25px;
+      height: 40px;
+      width: 40px;
       transform: rotateY(180deg);
     }
   }
@@ -70,6 +101,7 @@
   .Mobile_Menu {
     border: 1px solid black;
     background-color: rgba(0, 0, 0, 0.9);
+
     display: flex;
     flex-direction: column;
 
@@ -77,14 +109,17 @@
     top: 0px;
     right: 0px;
 
+    justify-content: center;
+    align-items: center;
+
+    padding: 5px;
+
     height: 100vh;
     width: 500px;
 
-    z-index: 105;
-    overflow-y: scroll;
-
-    transform: translateX(100%);
+    z-index: 110;
     transition: 0.5s;
+    transform: translateX(100%);
 
     display: none;
 
@@ -102,6 +137,19 @@
   }
 }
 
+// Logo Hover Effect Start
+.Nav:hover {
+  .Left_Side {
+    .Logo_Container {
+      border: 3px solid rgb(242, 4, 7);
+      .Logo {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+// Logo Hover Effect End
+
 // Media Queries Start
 
 @media only screen and (max-width: 1200px) {
@@ -112,6 +160,12 @@
 
 @media only screen and (max-width: 768px) {
   .Nav {
+    .Left_Side {
+      .Brand {
+        display: none;
+      }
+    }
+
     .Right_Side {
       .Navlink_Container {
         display: none;

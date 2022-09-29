@@ -11,11 +11,11 @@ const Nav = () => {
   return (
     <div className={Styles.Nav}>
       <div className={Styles.Left_Side}>
-        <div>
-          <img src="" className={Styles.Logo_Container} alt="" />
+        <div className={Styles.Logo_Container}>
+          <img src={require("../../../Assests/Images/Logo.png")} className={Styles.Logo} alt="" />
         </div>
 
-        <h3 className={Styles.Brand}>Rook</h3>
+        <h3 className={Styles.Brand}>Dev Rook</h3>
       </div>
 
       <div className={Styles.Right_Side}>
