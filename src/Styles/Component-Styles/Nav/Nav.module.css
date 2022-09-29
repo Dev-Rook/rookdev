@@ -60,11 +60,21 @@
   justify-content: space-between;
   align-items: center;
 }
+.Nav .Right_Side .Navlink_Container .NavItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .Nav .Right_Side .Navlink_Container .NavItem .Navlink {
   color: white;
   font-family: sans-serif;
   font-size: 15px;
   font-weight: 400;
+}
+.Nav .Right_Side .Navlink_Container .NavItem .NavIcon {
+  color: rgb(255, 122, 0);
+  display: flex;
+  margin: auto;
 }
 .Nav .Right_Side .Navlink_Container .NavItem .Navlink:hover {
   border-bottom: 1px solid rgb(255, 122, 0);
@@ -201,7 +211,7 @@
   color: white;
 }
 .Nav .Mobile_Menu .Content_Container .Menu_Separater {
-  border: 1px solid lightgrey;
+  border: 1px solid rgb(255, 122, 0);
   width: 100%;
 }
 .Nav .Mobile_Menu .Content_Container .Weblink_Container {

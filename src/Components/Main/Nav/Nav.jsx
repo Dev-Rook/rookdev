@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 import Styles from "../../../Styles/Component-Styles/Nav/Nav.module.css";
 
+import { Link } from "react-router-dom";
+
 import CloseIcon from "@mui/icons-material/Close";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import TerminalOutlinedIcon from "@mui/icons-material/TerminalOutlined";
 import SendOutlinedIcon from "@mui/icons-material/SendOutlined";
 import ForumOutlinedIcon from "@mui/icons-material/ForumOutlined";
+import LogoDevIcon from '@mui/icons-material/LogoDev';
 
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InsertLinkIcon from "@mui/icons-material/InsertLink";
@@ -50,13 +53,18 @@ const Nav = () => {
       <div className={Styles.Right_Side}>
         <ul className={Styles.Navlink_Container}>
           <li className={Styles.NavItem}>
-            <a className={Styles.Navlink}>Home</a>
+            <Link to={"/"} className={Styles.Navlink}>Home</Link>
           </li>
           <li className={Styles.NavItem}>
             <a className={Styles.Navlink}>Portfolio</a>
           </li>
           <li className={Styles.NavItem}>
             <a className={Styles.Navlink}>Contact</a>
+          </li>
+          <li className={Styles.NavItem}>
+            <a className={Styles.Navlink}>
+              <LogoDevIcon className={Styles.NavIcon} />
+            </a>
           </li>
         </ul>
 
@@ -100,27 +108,36 @@ const Nav = () => {
                 sx={{ fontSize: 25 }}
                 className={Styles.Navlink_Icon}
               />
-              <a href="#" className={Styles.Menu_Navlink}>
+              <Link to={"/"} onClick={showMenu} className={Styles.Menu_Navlink}>
                 Home
-              </a>
+              </Link>
             </li>
             <li className={Styles.Menu_NavItem}>
               <TerminalOutlinedIcon
                 sx={{ fontSize: 25 }}
                 className={Styles.Navlink_Icon}
               />
-              <a href="#" className={Styles.Menu_Navlink}>
+              <Link to={"Portfolio"} onClick={showMenu} className={Styles.Menu_Navlink}>
                 Portfolio
-              </a>
+              </Link>
             </li>
             <li className={Styles.Menu_NavItem}>
               <SendOutlinedIcon
                 sx={{ fontSize: 25 }}
                 className={Styles.Navlink_Icon}
               />
-              <a href="#" className={Styles.Menu_Navlink}>
+              <Link to={"Contact"} onClick={showMenu} className={Styles.Menu_Navlink}>
                 Contact
-              </a>
+              </Link>
+            </li>
+            <li className={Styles.Menu_NavItem}>
+              <LogoDevIcon
+                sx={{ fontSize: 25 }}
+                className={Styles.Navlink_Icon}
+              />
+              <Link to={"DevLogs"} onClick={showMenu} className={Styles.Menu_Navlink}>
+                Dev Logs
+              </Link>
             </li>
             <li className={Styles.Menu_NavItem}>
               <Accordion
@@ -162,7 +179,7 @@ const Nav = () => {
                 sx={{ fontSize: 25 }}
                 className={Styles.Weblink_Icon}
               />
-              <a target={"_blank"} href="#" className={Styles.Weblink}>
+              <a target={"_blank"} onClick={showMenu} href="#" className={Styles.Weblink}>
                 LinkedIn
               </a>
             </li>
@@ -171,7 +188,7 @@ const Nav = () => {
                 sx={{ fontSize: 25 }}
                 className={Styles.Weblink_Icon}
               />
-              <a target={"_blank"} href="#" className={Styles.Weblink}>
+              <a target={"_blank"} onClick={showMenu} href="#" className={Styles.Weblink}>
                 GitHub
               </a>
             </li>
@@ -180,7 +197,7 @@ const Nav = () => {
                 sx={{ fontSize: 25 }}
                 className={Styles.Weblink_Icon}
               />
-              <a target={"_blank"} href="#" className={Styles.Weblink}>
+              <a target={"_blank"} onClick={showMenu} href="#" className={Styles.Weblink}>
                 Twitter
               </a>
             </li>
@@ -189,7 +206,7 @@ const Nav = () => {
                 sx={{ fontSize: 25 }}
                 className={Styles.Weblink_Icon}
               />
-              <a target={"_blank"} href="#" className={Styles.Weblink}>
+              <a target={"_blank"} onClick={showMenu} href="#" className={Styles.Weblink}>
                 Developer Resume
               </a>
             </li>

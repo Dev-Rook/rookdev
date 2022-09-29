@@ -74,11 +74,20 @@
       align-items: center;
 
       .NavItem {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         .Navlink {
           color: white;
           font-family: sans-serif;
           font-size: 15px;
           font-weight: 400;
+        }
+
+        .NavIcon {
+          color: rgb(255, 122, 0);
+          display: flex;
+          margin: auto;
         }
 
         .Navlink:hover {
@@ -263,7 +272,7 @@
       }
 
       .Menu_Separater {
-        border: 1px solid lightgrey;
+        border: 1px solid rgb(255, 122, 0);
         width: 100%;
       }
 
