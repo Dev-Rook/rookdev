@@ -89,7 +89,7 @@ const Nav = () => {
             </div>
 
             <CloseIcon
-              sx={{ fontSize: 30 }}
+              sx={{ fontSize: 25 }}
               onClick={showMenu}
               className={Styles.Close_Icon}
             />
@@ -97,7 +97,7 @@ const Nav = () => {
           <ul className={Styles.Mobile_Navlink_Container}>
             <li className={Styles.Menu_NavItem}>
               <HomeOutlinedIcon
-                sx={{ fontSize: 30 }}
+                sx={{ fontSize: 25 }}
                 className={Styles.Navlink_Icon}
               />
               <a href="#" className={Styles.Menu_Navlink}>
@@ -106,7 +106,7 @@ const Nav = () => {
             </li>
             <li className={Styles.Menu_NavItem}>
               <TerminalOutlinedIcon
-                sx={{ fontSize: 30 }}
+                sx={{ fontSize: 25 }}
                 className={Styles.Navlink_Icon}
               />
               <a href="#" className={Styles.Menu_Navlink}>
@@ -115,7 +115,7 @@ const Nav = () => {
             </li>
             <li className={Styles.Menu_NavItem}>
               <SendOutlinedIcon
-                sx={{ fontSize: 30 }}
+                sx={{ fontSize: 25 }}
                 className={Styles.Navlink_Icon}
               />
               <a href="#" className={Styles.Menu_Navlink}>
@@ -159,7 +159,7 @@ const Nav = () => {
             <h3 className={Styles.Title}>On The Web -</h3>
             <li className={Styles.Weblink_Item}>
               <LinkedInIcon
-                sx={{ fontSize: 30 }}
+                sx={{ fontSize: 25 }}
                 className={Styles.Weblink_Icon}
               />
               <a target={"_blank"} href="#" className={Styles.Weblink}>
@@ -168,7 +168,7 @@ const Nav = () => {
             </li>
             <li className={Styles.Weblink_Item}>
               <GitHubIcon
-                sx={{ fontSize: 30 }}
+                sx={{ fontSize: 25 }}
                 className={Styles.Weblink_Icon}
               />
               <a target={"_blank"} href="#" className={Styles.Weblink}>
@@ -177,7 +177,7 @@ const Nav = () => {
             </li>
             <li className={Styles.Weblink_Item}>
               <TwitterIcon
-                sx={{ fontSize: 30 }}
+                sx={{ fontSize: 25 }}
                 className={Styles.Weblink_Icon}
               />
               <a target={"_blank"} href="#" className={Styles.Weblink}>
@@ -186,7 +186,7 @@ const Nav = () => {
             </li>
             <li className={Styles.Weblink_Item}>
               <InsertLinkIcon
-                sx={{ fontSize: 30 }}
+                sx={{ fontSize: 25 }}
                 className={Styles.Weblink_Icon}
               />
               <a target={"_blank"} href="#" className={Styles.Weblink}>
