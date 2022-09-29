@@ -60,6 +60,7 @@
   .Right_Side {
     display: flex;
 
+    padding: 5px;
     gap: 20px;
     justify-content: space-between;
     align-items: center;
@@ -95,12 +96,22 @@
       height: 40px;
       width: 40px;
       transform: rotateY(180deg);
+      cursor: pointer;
+      transition: 0.5s;
+    }
+
+    .Menu_Icon:hover {
+      border: 1px solid rgb(255, 122, 0, 0.5);
+    }
+
+    .Menu_Icon:active {
+      border: 1px solid rgb(255, 122, 0, 0.5);
     }
   }
 
   .Mobile_Menu {
     border: 1px solid black;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(196, 196, 196, 0.3);
 
     display: flex;
     flex-direction: column;
@@ -117,59 +128,173 @@
 
     z-index: 110;
     transition: 0.5s;
+    transition-timing-function: ease-in-out;
     transform: translateX(-100%);
 
     display: none;
 
     .Content_Container {
       box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
-      background-color: rgba(0, 0, 0, 0.9);
+      background-color: rgb(26, 26, 27);
 
       display: flex;
       flex-direction: column;
+
+      gap: 20px;
 
       height: 100%;
       width: 350px;
 
       .Header {
-        border: 1px solid white;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
         display: flex;
+
+        padding: 5px;
+        position: relative;
 
         justify-content: space-between;
         align-items: center;
 
         z-index: 150;
 
-        .Logo_Container {
-          box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px,
-            rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
-            rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-          border: 2px solid rgb(255, 122, 0);
-          height: 50px;
-          width: 50px;
-          border-radius: 50%;
+        .Menu_Left_Side {
           display: flex;
-          justify-content: center;
-          align-items: center;
-          overflow: hidden;
-          transition: 0.5s;
 
-          .Logo {
+          padding: 5px;
+          gap: 20px;
+          justify-content: space-between;
+          align-items: center;
+
+          .Logo_Container {
             box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px,
               rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
               rgba(0, 0, 0, 0.09) 0px 16px 8px,
               rgba(0, 0, 0, 0.09) 0px 32px 16px;
-            height: 100%;
-            width: 100%;
-            margin: auto;
-            object-fit: cover;
+            border: 2px solid rgb(255, 122, 0);
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
             transition: 0.5s;
+
+            .Logo {
+              box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px,
+                rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+                rgba(0, 0, 0, 0.09) 0px 16px 8px,
+                rgba(0, 0, 0, 0.09) 0px 32px 16px;
+              height: 100%;
+              width: 100%;
+              margin: auto;
+              object-fit: cover;
+              transition: 0.5s;
+            }
+          }
+
+          .Brand {
+            color: white;
+            font-family: sans-serif;
+            font-size: 20px;
+            font-weight: 400;
+            //   animation: flicker 1.5s infinite alternate;
           }
         }
 
         .Close_Icon {
-          height: 30px;
-          width: 30px;
+          color: white;
+
+          position: absolute;
+          right: -80px;
+        }
+      }
+
+      .Mobile_Navlink_Container {
+        display: flex;
+        flex-direction: column;
+
+        gap: 15px;
+
+        justify-content: space-evenly;
+
+        .Menu_NavItem {
+          display: flex;
+
+          padding: 5px;
+          gap: 15px;
+
+          align-items: center;
+
+          height: 100%;
+          width: 100%;
+
+          .Navlink_Icon {
+            color: rgb(160, 203, 220);
+          }
+
+          .Menu_Navlink {
+            color: white;
+            font-family: sans-serif;
+            font-size: 20px;
+            font-weight: 200;
+          }
+
+          .Menu_Navlink:hover {
+            border-bottom: 1px solid rgb(255, 122, 0);
+            // -180px 0px 0px 1px inset
+          }
+
+          .Accordion {
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+            background-color: rgb(26, 26, 27);
+            color: white;
+          }
+        }
+      }
+
+      .Menu_Separater {
+        border: 1px solid lightgrey;
+        width: 100%;
+      }
+
+      .Weblink_Container {
+        display: flex;
+        flex-direction: column;
+
+        padding: 5px;
+        gap: 10px;
+
+        justify-content: space-evenly;
+
+        .Title {
+          color: white;
+          font-family: sans-serif;
+          font-size: 18px;
+          font-weight: 400;
+        }
+
+        .Weblink_Item {
+          display: flex;
+
+          padding: 5px;
+          gap: 15px;
+
+          align-items: center;
+
+          height: 100%;
+          width: 100%;
+
+          .Weblink_Icon {
+            color: #2c7a7b;
+          }
+
+          .Weblink {
+            color: white;
+            font-family: sans-serif;
+            font-size: 15px;
+            font-weight: 400;
+          }
         }
       }
     }
@@ -235,14 +360,14 @@
   53%,
   57%,
   100% {
-    text-shadow: 0 0 7px #f20407, 0 0 10px #f20407, 0 0 21px #f20407,
+    border: 0 0 7px #f20407, 0 0 10px #f20407, 0 0 21px #f20407,
       0 0 42px #ff7a00, 0 0 82px #ff7a00, 0 0 92px #ff7a00, 0 0 102px #ff7a00,
       0 0 151px #ff7a00;
   }
   20%,
   24%,
   55% {
-    text-shadow: none;
+    border: none;
   }
 }
 
