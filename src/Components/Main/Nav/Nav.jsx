@@ -162,7 +162,7 @@ const Nav = () => {
                 sx={{ fontSize: 30 }}
                 className={Styles.Weblink_Icon}
               />
-              <a href="#" className={Styles.Weblink}>
+              <a target={"_blank"} href="#" className={Styles.Weblink}>
                 LinkedIn
               </a>
             </li>
@@ -171,7 +171,7 @@ const Nav = () => {
                 sx={{ fontSize: 30 }}
                 className={Styles.Weblink_Icon}
               />
-              <a href="#" className={Styles.Weblink}>
+              <a target={"_blank"} href="#" className={Styles.Weblink}>
                 GitHub
               </a>
             </li>
@@ -180,7 +180,7 @@ const Nav = () => {
                 sx={{ fontSize: 30 }}
                 className={Styles.Weblink_Icon}
               />
-              <a href="#" className={Styles.Weblink}>
+              <a target={"_blank"} href="#" className={Styles.Weblink}>
                 Twitter
               </a>
             </li>
@@ -189,7 +189,7 @@ const Nav = () => {
                 sx={{ fontSize: 30 }}
                 className={Styles.Weblink_Icon}
               />
-              <a href="#" className={Styles.Weblink}>
+              <a target={"_blank"} href="#" className={Styles.Weblink}>
                 Developer Resume
               </a>
             </li>
