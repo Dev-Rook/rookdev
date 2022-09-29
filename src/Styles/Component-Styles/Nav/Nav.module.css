@@ -93,7 +93,7 @@
   position: absolute;
   top: 0px;
   left: 0px;
-  overflow: scroll;
+  overflow-y: scroll;
   justify-content: center;
   align-items: left;
   height: -webkit-fit-content;
@@ -104,6 +104,9 @@
   transition: 0.5s;
   transition-timing-function: ease-in-out;
   transform: translateX(-100%);
+  display: none;
+}
+.Nav .Mobile_Menu ::-webkit-scrollbar {
   display: none;
 }
 .Nav .Mobile_Menu .Content_Container {
@@ -140,7 +143,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: scroll;
+  overflow: hidden;
   transition: 0.5s;
 }
 .Nav .Mobile_Menu .Content_Container .Header .Menu_Left_Side .Logo_Container .Logo {
@@ -237,7 +240,7 @@
 }
 
 .Nav:hover .Left_Side .Logo_Container {
-  border: 3px solid rgb(242, 4, 7);
+  border: 2px solid rgb(242, 4, 7);
 }
 .Nav:hover .Left_Side .Logo_Container .Logo {
   transform: scale(1.1);

@@ -118,7 +118,7 @@
     position: absolute;
     top: 0px;
     left: 0px;
-    overflow: scroll;
+    overflow-y: scroll;
 
     justify-content: center;
     align-items: left;
@@ -132,6 +132,10 @@
     transform: translateX(-100%);
 
     display: none;
+
+    ::-webkit-scrollbar {
+      display: none;
+    }
 
     .Content_Container {
       box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
@@ -177,7 +181,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            overflow: scroll;
+            overflow: hidden;
             transition: 0.5s;
 
             .Logo {
@@ -315,7 +319,7 @@
 .Nav:hover {
   .Left_Side {
     .Logo_Container {
-      border: 3px solid rgb(242, 4, 7);
+      border: 2px solid rgb(242, 4, 7);
       .Logo {
         transform: scale(1.1);
       }
