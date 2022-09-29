@@ -189,6 +189,9 @@
 .Nav .Mobile_Menu .Content_Container .Mobile_Navlink_Container .Menu_NavItem .Menu_Navlink:hover {
   border-bottom: 1px solid rgb(255, 122, 0);
 }
+.Nav .Mobile_Menu .Content_Container .Mobile_Navlink_Container .Menu_NavItem .Menu_Navlink:active {
+  border-bottom: 1px solid rgb(255, 122, 0);
+}
 .Nav .Mobile_Menu .Content_Container .Mobile_Navlink_Container .Menu_NavItem .Accordion {
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
   background-color: rgb(26, 26, 27);
