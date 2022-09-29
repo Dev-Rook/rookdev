@@ -156,7 +156,7 @@ const Nav = () => {
 
           {/* Weblink Container Start */}
           <ul className={Styles.Weblink_Container}>
-            <h3 className={Styles.Title}>On The Web</h3>
+            <h3 className={Styles.Title}>On The Web -</h3>
             <li className={Styles.Weblink_Item}>
               <LinkedInIcon
                 sx={{ fontSize: 30 }}

@@ -93,8 +93,7 @@
       border-radius: 3px;
       padding: 3px;
       display: none;
-      height: 40px;
-      width: 40px;
+      width: 30px;
       transform: rotateY(180deg);
       cursor: pointer;
       transition: 0.5s;
@@ -119,6 +118,7 @@
     position: absolute;
     top: 0px;
     left: 0px;
+    overflow: scroll;
 
     justify-content: center;
     align-items: left;
@@ -177,7 +177,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            overflow: hidden;
+            overflow: scroll;
             transition: 0.5s;
 
             .Logo {
@@ -344,6 +344,21 @@
     }
     .Mobile_Menu {
       display: flex;
+    }
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .Nav {
+    .Mobile_Menu {
+      .Content_Container {
+        width: 100%;
+        .Header {
+          .Close_Icon {
+            right: 10px;
+          }
+        }
+      }
     }
   }
 }
