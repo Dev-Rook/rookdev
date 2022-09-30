@@ -173,7 +173,10 @@ const Nav = () => {
                   >
                     Discord -
                   </Typography> */}
-                  <Typography className={Styles.Accordion_Title} sx={{ color: "#ff7a00" }}>
+                  <Typography
+                    className={Styles.Accordion_Title}
+                    sx={{ color: "#ff7a00" }}
+                  >
                     Code Runners - &nbsp;
                     <a className={Styles.Discord_Link} href="http://">
                       <img
