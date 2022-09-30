@@ -3,6 +3,7 @@ import Styles from "../../../Styles/Component-Styles/Nav/Nav.module.css";
 
 import { Link } from "react-router-dom";
 
+import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import TerminalOutlinedIcon from "@mui/icons-material/TerminalOutlined";
@@ -39,13 +40,15 @@ const Nav = () => {
   return (
     <div className={Styles.Nav}>
       <div className={Styles.Left_Side}>
-        <div className={Styles.Logo_Container}>
-          <img
-            src={require("../../../Assests/Images/Logo.png")}
-            className={Styles.Logo}
-            alt=""
-          />
-        </div>
+        <Link to={"/"}>
+          <div className={Styles.Logo_Container}>
+            <img
+              src={require("../../../Assests/Images/Logo.png")}
+              className={Styles.Logo}
+              alt=""
+            />
+          </div>
+        </Link>
 
         <h3 className={Styles.Brand}>Dev Rook</h3>
       </div>
@@ -74,10 +77,9 @@ const Nav = () => {
           </li>
         </ul>
 
-        <img
+        <MenuIcon
+          sx={{ fontSize: 30 }}
           onClick={showMenu}
-          src={require("../../../Assests/Icons/Menu-Icon.png")}
-          alt=""
           className={Styles.Menu_Icon}
         />
       </div>

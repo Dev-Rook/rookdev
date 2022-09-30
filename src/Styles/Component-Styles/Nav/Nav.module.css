@@ -45,6 +45,7 @@
   font-family: "Nunito", sans-serif;
   font-size: 20px;
   font-weight: 400;
+  cursor: pointer;
 }
 .Nav .Right_Side {
   display: flex;
@@ -79,7 +80,11 @@
 .Nav .Right_Side .Navlink_Container .NavItem .Navlink:hover {
   border-bottom: 1px solid rgb(255, 122, 0);
 }
+.Nav .Right_Side .Navlink_Container .NavItem .Navlink:active {
+  border-bottom: 1px solid rgb(255, 122, 0);
+}
 .Nav .Right_Side .Menu_Icon {
+  color: white;
   border: 1px solid rgba(240, 231, 219, 0.5);
   border-radius: 3px;
   padding: 3px;
@@ -91,6 +96,8 @@
 }
 .Nav .Right_Side .Menu_Icon:hover {
   border: 1px solid rgba(255, 122, 0, 0.5);
+  color: black;
+  background-color: white;
 }
 .Nav .Right_Side .Menu_Icon:active {
   border: 1px solid rgba(255, 122, 0, 0.5);
@@ -175,6 +182,7 @@
   color: white;
   position: absolute;
   right: -80px;
+  cursor: pointer;
 }
 .Nav .Mobile_Menu .Content_Container .Mobile_Navlink_Container {
   display: flex;
