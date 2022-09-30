@@ -206,7 +206,7 @@ const Nav = () => {
             <a
               target={"_blank"}
               onClick={showMenu}
-              href="#"
+              href="https://www.linkedin.com/in/dev-rook/"
               className={Styles.Weblink}
             >
               <li className={Styles.Weblink_Item}>
@@ -214,13 +214,13 @@ const Nav = () => {
                   sx={{ fontSize: 25 }}
                   className={Styles.Weblink_Icon}
                 />
-                LinkedIn
+                Daniel Brown
               </li>
             </a>
             <a
               target={"_blank"}
               onClick={showMenu}
-              href="#"
+              href="https://github.com/Dev-Rook"
               className={Styles.Weblink}
             >
               <li className={Styles.Weblink_Item}>
@@ -228,13 +228,13 @@ const Nav = () => {
                   sx={{ fontSize: 25 }}
                   className={Styles.Weblink_Icon}
                 />
-                GitHub
+                Dev-Rook
               </li>
             </a>
             <a
               target={"_blank"}
               onClick={showMenu}
-              href="#"
+              href="https://twitter.com/Dev_Rook"
               className={Styles.Weblink}
             >
               <li className={Styles.Weblink_Item}>
@@ -242,13 +242,13 @@ const Nav = () => {
                   sx={{ fontSize: 25 }}
                   className={Styles.Weblink_Icon}
                 />
-                Twitter
+                Dev_Rook
               </li>
             </a>
             <a
               target={"_blank"}
               onClick={showMenu}
-              href="#"
+              href="https://rxresu.me/dev.rook121/developer-resume"
               className={Styles.Weblink}
             >
               <li className={Styles.Weblink_Item}>
