@@ -215,6 +215,7 @@
         }
 
         .Close_Icon {
+          box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
           color: white;
 
           position: absolute;
@@ -248,6 +249,7 @@
 
           .Navlink_Icon {
             color: #e3b261;
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
           }
 
           .Menu_Navlink:hover {
@@ -276,6 +278,7 @@
 
               .Discord_Icon {
                 // display: flex;
+                box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
                 margin: auto;
                 width: 20px;
               }
@@ -348,8 +351,8 @@
 
           .Weblink_Icon {
             color: rgb(160, 203, 220);
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
           }
-
         }
       }
     }

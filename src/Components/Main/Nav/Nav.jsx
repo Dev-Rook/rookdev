@@ -7,7 +7,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import TerminalOutlinedIcon from "@mui/icons-material/TerminalOutlined";
 import SendOutlinedIcon from "@mui/icons-material/SendOutlined";
-import ForumOutlinedIcon from "@mui/icons-material/ForumOutlined";
+// import ForumOutlinedIcon from "@mui/icons-material/ForumOutlined";
 import LogoDevIcon from "@mui/icons-material/LogoDev";
 
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -178,7 +178,11 @@ const Nav = () => {
                     sx={{ color: "#ff7a00" }}
                   >
                     Code Runners - &nbsp;
-                    <a className={Styles.Discord_Link} href="http://">
+                    <a
+                      className={Styles.Discord_Link}
+                      target={"_blank"}
+                      href="https://discord.gg/ce7mtCbgmG"
+                    >
                       <img
                         src={require("../../../Assests/Icons/Discord-Logo.png")}
                         alt=""
