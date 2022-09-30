@@ -241,15 +241,13 @@
           height: 100%;
           width: 100%;
 
+          color: white;
+          font-family: "Nunito", sans-serif;
+          font-size: 18px;
+          font-weight: 200;
+
           .Navlink_Icon {
             color: #e3b261;
-          }
-
-          .Menu_Navlink {
-            color: white;
-            font-family: "Nunito", sans-serif;
-            font-size: 18px;
-            font-weight: 200;
           }
 
           .Menu_Navlink:hover {
@@ -343,16 +341,15 @@
           height: 100%;
           width: 100%;
 
+          color: #2c7a7b;
+          font-family: "Nunito", sans-serif;
+          font-size: 15px;
+          font-weight: 400;
+
           .Weblink_Icon {
             color: rgb(160, 203, 220);
           }
 
-          .Weblink {
-            color: #2c7a7b;
-            font-family: "Nunito", sans-serif;
-            font-size: 15px;
-            font-weight: 400;
-          }
         }
       }
     }

@@ -109,54 +109,54 @@ const Nav = () => {
             />
           </div>
           <ul className={Styles.Mobile_Navlink_Container}>
-            <li className={Styles.Menu_NavItem}>
-              <HomeOutlinedIcon
-                sx={{ fontSize: 25 }}
-                className={Styles.Navlink_Icon}
-              />
-              <Link to={"/"} onClick={showMenu} className={Styles.Menu_Navlink}>
+            <Link to={"/"} onClick={showMenu} className={Styles.Menu_Navlink}>
+              <li className={Styles.Menu_NavItem}>
+                <HomeOutlinedIcon
+                  sx={{ fontSize: 25 }}
+                  className={Styles.Navlink_Icon}
+                />
                 Home
-              </Link>
-            </li>
-            <li className={Styles.Menu_NavItem}>
-              <TerminalOutlinedIcon
-                sx={{ fontSize: 25 }}
-                className={Styles.Navlink_Icon}
-              />
-              <Link
-                to={"Portfolio"}
-                onClick={showMenu}
-                className={Styles.Menu_Navlink}
-              >
+              </li>
+            </Link>
+            <Link
+              to={"Portfolio"}
+              onClick={showMenu}
+              className={Styles.Menu_Navlink}
+            >
+              <li className={Styles.Menu_NavItem}>
+                <TerminalOutlinedIcon
+                  sx={{ fontSize: 25 }}
+                  className={Styles.Navlink_Icon}
+                />
                 Portfolio
-              </Link>
-            </li>
-            <li className={Styles.Menu_NavItem}>
-              <SendOutlinedIcon
-                sx={{ fontSize: 25 }}
-                className={Styles.Navlink_Icon}
-              />
-              <Link
-                to={"Contact"}
-                onClick={showMenu}
-                className={Styles.Menu_Navlink}
-              >
+              </li>
+            </Link>
+            <Link
+              to={"Contact"}
+              onClick={showMenu}
+              className={Styles.Menu_Navlink}
+            >
+              <li className={Styles.Menu_NavItem}>
+                <SendOutlinedIcon
+                  sx={{ fontSize: 25 }}
+                  className={Styles.Navlink_Icon}
+                />
                 Contact
-              </Link>
-            </li>
-            <li className={Styles.Menu_NavItem}>
-              <LogoDevIcon
-                sx={{ fontSize: 25 }}
-                className={Styles.Navlink_Icon}
-              />
-              <Link
-                to={"DevLogs"}
-                onClick={showMenu}
-                className={Styles.Menu_Navlink}
-              >
+              </li>
+            </Link>
+            <Link
+              to={"DevLogs"}
+              onClick={showMenu}
+              className={Styles.Menu_Navlink}
+            >
+              <li className={Styles.Menu_NavItem}>
+                <LogoDevIcon
+                  sx={{ fontSize: 25 }}
+                  className={Styles.Navlink_Icon}
+                />
                 Dev Logs
-              </Link>
-            </li>
+              </li>
+            </Link>
             <li className={Styles.Menu_NavItem}>
               <Accordion
                 expanded={expanded === "panel1"}
@@ -203,62 +203,62 @@ const Nav = () => {
           {/* Weblink Container Start */}
           <ul className={Styles.Weblink_Container}>
             <h3 className={Styles.Title}>On The Web -</h3>
-            <li className={Styles.Weblink_Item}>
-              <LinkedInIcon
-                sx={{ fontSize: 25 }}
-                className={Styles.Weblink_Icon}
-              />
-              <a
-                target={"_blank"}
-                onClick={showMenu}
-                href="#"
-                className={Styles.Weblink}
-              >
+            <a
+              target={"_blank"}
+              onClick={showMenu}
+              href="#"
+              className={Styles.Weblink}
+            >
+              <li className={Styles.Weblink_Item}>
+                <LinkedInIcon
+                  sx={{ fontSize: 25 }}
+                  className={Styles.Weblink_Icon}
+                />
                 LinkedIn
-              </a>
-            </li>
-            <li className={Styles.Weblink_Item}>
-              <GitHubIcon
-                sx={{ fontSize: 25 }}
-                className={Styles.Weblink_Icon}
-              />
-              <a
-                target={"_blank"}
-                onClick={showMenu}
-                href="#"
-                className={Styles.Weblink}
-              >
+              </li>
+            </a>
+            <a
+              target={"_blank"}
+              onClick={showMenu}
+              href="#"
+              className={Styles.Weblink}
+            >
+              <li className={Styles.Weblink_Item}>
+                <GitHubIcon
+                  sx={{ fontSize: 25 }}
+                  className={Styles.Weblink_Icon}
+                />
                 GitHub
-              </a>
-            </li>
-            <li className={Styles.Weblink_Item}>
-              <TwitterIcon
-                sx={{ fontSize: 25 }}
-                className={Styles.Weblink_Icon}
-              />
-              <a
-                target={"_blank"}
-                onClick={showMenu}
-                href="#"
-                className={Styles.Weblink}
-              >
+              </li>
+            </a>
+            <a
+              target={"_blank"}
+              onClick={showMenu}
+              href="#"
+              className={Styles.Weblink}
+            >
+              <li className={Styles.Weblink_Item}>
+                <TwitterIcon
+                  sx={{ fontSize: 25 }}
+                  className={Styles.Weblink_Icon}
+                />
                 Twitter
-              </a>
-            </li>
-            <li className={Styles.Weblink_Item}>
-              <InsertLinkIcon
-                sx={{ fontSize: 25 }}
-                className={Styles.Weblink_Icon}
-              />
-              <a
-                target={"_blank"}
-                onClick={showMenu}
-                href="#"
-                className={Styles.Weblink}
-              >
+              </li>
+            </a>
+            <a
+              target={"_blank"}
+              onClick={showMenu}
+              href="#"
+              className={Styles.Weblink}
+            >
+              <li className={Styles.Weblink_Item}>
+                <InsertLinkIcon
+                  sx={{ fontSize: 25 }}
+                  className={Styles.Weblink_Icon}
+                />
                 Developer Resume
-              </a>
-            </li>
+              </li>
+            </a>
           </ul>
           {/* Weblink Container End */}
         </div>

@@ -188,15 +188,13 @@
   align-items: center;
   height: 100%;
   width: 100%;
-}
-.Nav .Mobile_Menu .Content_Container .Mobile_Navlink_Container .Menu_NavItem .Navlink_Icon {
-  color: #e3b261;
-}
-.Nav .Mobile_Menu .Content_Container .Mobile_Navlink_Container .Menu_NavItem .Menu_Navlink {
   color: white;
   font-family: "Nunito", sans-serif;
   font-size: 18px;
   font-weight: 200;
+}
+.Nav .Mobile_Menu .Content_Container .Mobile_Navlink_Container .Menu_NavItem .Navlink_Icon {
+  color: #e3b261;
 }
 .Nav .Mobile_Menu .Content_Container .Mobile_Navlink_Container .Menu_NavItem .Menu_Navlink:hover {
   border-bottom: 1px solid rgb(255, 122, 0);
@@ -266,15 +264,13 @@
   align-items: center;
   height: 100%;
   width: 100%;
-}
-.Nav .Mobile_Menu .Content_Container .Weblink_Container .Weblink_Item .Weblink_Icon {
-  color: rgb(160, 203, 220);
-}
-.Nav .Mobile_Menu .Content_Container .Weblink_Container .Weblink_Item .Weblink {
   color: #2c7a7b;
   font-family: "Nunito", sans-serif;
   font-size: 15px;
   font-weight: 400;
+}
+.Nav .Mobile_Menu .Content_Container .Weblink_Container .Weblink_Item .Weblink_Icon {
+  color: rgb(160, 203, 220);
 }
 .Nav .ShowMenu {
   transform: translateX(0%);
