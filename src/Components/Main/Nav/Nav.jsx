@@ -56,15 +56,15 @@ const Nav = () => {
             <Link to={"/"} className={Styles.Navlink}>Home</Link>
           </li>
           <li className={Styles.NavItem}>
-            <a className={Styles.Navlink}>Portfolio</a>
+            <Link to={"Portfolio"} className={Styles.Navlink}>Portfolio</Link>
           </li>
           <li className={Styles.NavItem}>
-            <a className={Styles.Navlink}>Contact</a>
+            <Link to={"Contact"} className={Styles.Navlink}>Contact</Link>
           </li>
           <li className={Styles.NavItem}>
-            <a className={Styles.Navlink}>
+            <Link to={"DevLogs"} className={Styles.Navlink}>
               <LogoDevIcon className={Styles.NavIcon} />
-            </a>
+            </Link>
           </li>
         </ul>
 

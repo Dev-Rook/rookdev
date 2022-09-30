@@ -21,7 +21,7 @@
 }
 .Nav .Left_Side .Logo_Container {
   box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-  border: 2px solid rgb(255, 122, 0);
+  border: 2px solid #e3b261;
   height: 50px;
   width: 50px;
   border-radius: 50%;
@@ -41,8 +41,8 @@
   transition: 0.5s;
 }
 .Nav .Left_Side .Brand {
-  color: white;
-  font-family: sans-serif;
+  color: #e3b261;
+  font-family: "Nunito", sans-serif;
   font-size: 20px;
   font-weight: 400;
 }
@@ -67,12 +67,12 @@
 }
 .Nav .Right_Side .Navlink_Container .NavItem .Navlink {
   color: white;
-  font-family: sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 15px;
-  font-weight: 400;
+  font-weight: 200;
 }
 .Nav .Right_Side .Navlink_Container .NavItem .NavIcon {
-  color: rgb(255, 122, 0);
+  color: #e3b261;
   display: flex;
   margin: auto;
 }
@@ -166,7 +166,7 @@
   transition: 0.5s;
 }
 .Nav .Mobile_Menu .Content_Container .Header .Menu_Left_Side .Brand {
-  color: white;
+  color: #e3b261;
   font-family: sans-serif;
   font-size: 20px;
   font-weight: 400;
@@ -191,11 +191,11 @@
   width: 100%;
 }
 .Nav .Mobile_Menu .Content_Container .Mobile_Navlink_Container .Menu_NavItem .Navlink_Icon {
-  color: rgb(160, 203, 220);
+  color: #e3b261;
 }
 .Nav .Mobile_Menu .Content_Container .Mobile_Navlink_Container .Menu_NavItem .Menu_Navlink {
   color: white;
-  font-family: sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 18px;
   font-weight: 200;
 }
@@ -237,13 +237,13 @@
   width: 100%;
 }
 .Nav .Mobile_Menu .Content_Container .Weblink_Container .Weblink_Item .Weblink_Icon {
-  color: #2c7a7b;
+  color: rgb(160, 203, 220);
 }
 .Nav .Mobile_Menu .Content_Container .Weblink_Container .Weblink_Item .Weblink {
   color: white;
-  font-family: sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 15px;
-  font-weight: 400;
+  font-weight: 200;
 }
 .Nav .ShowMenu {
   transform: translateX(0%);
