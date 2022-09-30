@@ -272,10 +272,10 @@
   color: rgb(160, 203, 220);
 }
 .Nav .Mobile_Menu .Content_Container .Weblink_Container .Weblink_Item .Weblink {
-  color: white;
+  color: #2c7a7b;
   font-family: "Nunito", sans-serif;
   font-size: 15px;
-  font-weight: 200;
+  font-weight: 400;
 }
 .Nav .ShowMenu {
   transform: translateX(0%);
