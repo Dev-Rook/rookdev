@@ -50,7 +50,7 @@
 
     .Brand {
       color: #e3b261;
-      font-family: 'Nunito', sans-serif;
+      font-family: "Nunito", sans-serif;
       font-size: 20px;
       font-weight: 400;
       //   animation: flicker 1.5s infinite alternate;
@@ -79,7 +79,7 @@
         align-items: center;
         .Navlink {
           color: white;
-          font-family: 'Nunito', sans-serif;
+          font-family: "Nunito", sans-serif;
           font-size: 15px;
           font-weight: 200;
         }
@@ -248,7 +248,7 @@
 
           .Menu_Navlink {
             color: white;
-            font-family: 'Nunito', sans-serif;
+            font-family: "Nunito", sans-serif;
             font-size: 18px;
             font-weight: 200;
           }
@@ -267,6 +267,47 @@
             box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
             background-color: rgb(26, 26, 27);
             color: white;
+
+
+            .Accordion_Title {
+              display: flex;
+              .Discord_Link {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: auto;
+              }
+
+              .Discord_Icon {
+                // display: flex;
+                margin: auto;
+                width: 20px;
+              }
+            }
+
+            .Code_Runners_Description {
+              color: white;
+              font-family: "Nunito", sans-serif;
+              font-size: 14px;
+              font-style: italic;
+              font-weight: 100;
+
+              display: flex;
+              flex-direction: column;
+
+              .Discord_Link {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: auto;
+              }
+
+              .Discord_Icon {
+                // display: flex;
+                margin: auto;
+                width: 20px;
+              }
+            }
           }
         }
       }
@@ -310,7 +351,7 @@
 
           .Weblink {
             color: white;
-            font-family: 'Nunito', sans-serif;
+            font-family: "Nunito", sans-serif;
             font-size: 15px;
             font-weight: 200;
           }

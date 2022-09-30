@@ -8,7 +8,7 @@ import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import TerminalOutlinedIcon from "@mui/icons-material/TerminalOutlined";
 import SendOutlinedIcon from "@mui/icons-material/SendOutlined";
 import ForumOutlinedIcon from "@mui/icons-material/ForumOutlined";
-import LogoDevIcon from '@mui/icons-material/LogoDev';
+import LogoDevIcon from "@mui/icons-material/LogoDev";
 
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InsertLinkIcon from "@mui/icons-material/InsertLink";
@@ -53,13 +53,19 @@ const Nav = () => {
       <div className={Styles.Right_Side}>
         <ul className={Styles.Navlink_Container}>
           <li className={Styles.NavItem}>
-            <Link to={"/"} className={Styles.Navlink}>Home</Link>
+            <Link to={"/"} className={Styles.Navlink}>
+              Home
+            </Link>
           </li>
           <li className={Styles.NavItem}>
-            <Link to={"Portfolio"} className={Styles.Navlink}>Portfolio</Link>
+            <Link to={"Portfolio"} className={Styles.Navlink}>
+              Portfolio
+            </Link>
           </li>
           <li className={Styles.NavItem}>
-            <Link to={"Contact"} className={Styles.Navlink}>Contact</Link>
+            <Link to={"Contact"} className={Styles.Navlink}>
+              Contact
+            </Link>
           </li>
           <li className={Styles.NavItem}>
             <Link to={"DevLogs"} className={Styles.Navlink}>
@@ -117,7 +123,11 @@ const Nav = () => {
                 sx={{ fontSize: 25 }}
                 className={Styles.Navlink_Icon}
               />
-              <Link to={"Portfolio"} onClick={showMenu} className={Styles.Menu_Navlink}>
+              <Link
+                to={"Portfolio"}
+                onClick={showMenu}
+                className={Styles.Menu_Navlink}
+              >
                 Portfolio
               </Link>
             </li>
@@ -126,7 +136,11 @@ const Nav = () => {
                 sx={{ fontSize: 25 }}
                 className={Styles.Navlink_Icon}
               />
-              <Link to={"Contact"} onClick={showMenu} className={Styles.Menu_Navlink}>
+              <Link
+                to={"Contact"}
+                onClick={showMenu}
+                className={Styles.Menu_Navlink}
+              >
                 Contact
               </Link>
             </li>
@@ -135,7 +149,11 @@ const Nav = () => {
                 sx={{ fontSize: 25 }}
                 className={Styles.Navlink_Icon}
               />
-              <Link to={"DevLogs"} onClick={showMenu} className={Styles.Menu_Navlink}>
+              <Link
+                to={"DevLogs"}
+                onClick={showMenu}
+                className={Styles.Menu_Navlink}
+              >
                 Dev Logs
               </Link>
             </li>
@@ -150,19 +168,27 @@ const Nav = () => {
                   aria-controls="panel1bh-content"
                   id="panel1bh-header"
                 >
-                  <Typography
+                  {/* <Typography
                     sx={{ width: "33%", flexShrink: 0, color: "#319795" }}
                   >
                     Discord -
-                  </Typography>
-                  <Typography sx={{ color: "#ff7a00" }}>
-                    Code Runners
+                  </Typography> */}
+                  <Typography className={Styles.Accordion_Title} sx={{ color: "#ff7a00" }}>
+                    Code Runners - &nbsp;
+                    <a className={Styles.Discord_Link} href="http://">
+                      <img
+                        src={require("../../../Assests/Icons/Discord-Logo.png")}
+                        alt=""
+                        className={Styles.Discord_Icon}
+                      />
+                    </a>
                   </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                  <Typography>
-                    Nulla facilisi. Phasellus sollicitudin nulla et quam mattis
-                    feugiat. Aliquam eget maximus est, id dignissim quam.
+                  <Typography className={Styles.Code_Runners_Description}>
+                    Code Runners is a server that mainly focusses on Web
+                    Development. However there are categories for other forms of
+                    coding/programing.
                   </Typography>
                 </AccordionDetails>
               </Accordion>
@@ -179,7 +205,12 @@ const Nav = () => {
                 sx={{ fontSize: 25 }}
                 className={Styles.Weblink_Icon}
               />
-              <a target={"_blank"} onClick={showMenu} href="#" className={Styles.Weblink}>
+              <a
+                target={"_blank"}
+                onClick={showMenu}
+                href="#"
+                className={Styles.Weblink}
+              >
                 LinkedIn
               </a>
             </li>
@@ -188,7 +219,12 @@ const Nav = () => {
                 sx={{ fontSize: 25 }}
                 className={Styles.Weblink_Icon}
               />
-              <a target={"_blank"} onClick={showMenu} href="#" className={Styles.Weblink}>
+              <a
+                target={"_blank"}
+                onClick={showMenu}
+                href="#"
+                className={Styles.Weblink}
+              >
                 GitHub
               </a>
             </li>
@@ -197,7 +233,12 @@ const Nav = () => {
                 sx={{ fontSize: 25 }}
                 className={Styles.Weblink_Icon}
               />
-              <a target={"_blank"} onClick={showMenu} href="#" className={Styles.Weblink}>
+              <a
+                target={"_blank"}
+                onClick={showMenu}
+                href="#"
+                className={Styles.Weblink}
+              >
                 Twitter
               </a>
             </li>
@@ -206,7 +247,12 @@ const Nav = () => {
                 sx={{ fontSize: 25 }}
                 className={Styles.Weblink_Icon}
               />
-              <a target={"_blank"} onClick={showMenu} href="#" className={Styles.Weblink}>
+              <a
+                target={"_blank"}
+                onClick={showMenu}
+                href="#"
+                className={Styles.Weblink}
+              >
                 Developer Resume
               </a>
             </li>
