@@ -75,7 +75,7 @@
         font-size: 15px;
         font-style: italic;
         font-weight: 300;
-        text-align: center;
+        text-align: left;
 
         transition: 0.5s;
         flex-wrap: wrap;
@@ -227,6 +227,10 @@
         gap: 20px;
         width: 100%;
         align-items: center;
+
+        .Website_Description {
+          text-align: center;
+        }
       }
 
       .Links_Container {
