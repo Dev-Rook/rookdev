@@ -167,6 +167,7 @@
       background-color: rgba(0, 0, 0, 0.4);
       border: 2px solid black;
       display: flex;
+
       padding: 3px;
       gap: 10px;
 
@@ -179,6 +180,7 @@
       font-weight: 300;
 
       transition: 0.5s;
+      cursor: pointer;
     }
 
     .Show_Less_Button {
@@ -198,6 +200,7 @@
 
       transition: 0.5s;
       transform: translateX(100%);
+      cursor: pointer;
     }
 
     .Show_More_Button:hover {
