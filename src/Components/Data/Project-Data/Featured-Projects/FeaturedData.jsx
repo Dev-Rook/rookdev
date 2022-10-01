@@ -1,10 +1,11 @@
 const FeaturedData = [
   {
     id: 1,
-    Image: "",
-    Title: "",
+    Image: "https://avatars.githubusercontent.com/u/110010478?v=4",
+    Title: "Website Title",
     Category: "",
-    Description: "",
+    Description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, maxime!",
     Stacks: {
       Stack1: "React",
       Stack2: "MUI",
@@ -20,9 +21,10 @@ const FeaturedData = [
   {
     id: 2,
     Image: "",
-    Title: "",
+    Title: "Website Title",
     Category: "",
-    Description: "",
+    Description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, maxime!",
     Stacks: {
       Stack1: "React",
       Stack2: "MUI",
@@ -38,9 +40,10 @@ const FeaturedData = [
   {
     id: 3,
     Image: "",
-    Title: "",
+    Title: "Website Title",
     Category: "",
-    Description: "",
+    Description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, maxime!",
     Stacks: {
       Stack1: "React",
       Stack2: "MUI",
@@ -56,9 +59,10 @@ const FeaturedData = [
   {
     id: 4,
     Image: "",
-    Title: "",
+    Title: "Website Title",
     Category: "",
-    Description: "",
+    Description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, maxime!",
     Stacks: {
       Stack1: "React",
       Stack2: "MUI",
@@ -74,9 +78,10 @@ const FeaturedData = [
   {
     id: 5,
     Image: "",
-    Title: "",
+    Title: "Website Title",
     Category: "",
-    Description: "",
+    Description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, maxime!",
     Stacks: {
       Stack1: "React",
       Stack2: "MUI",
@@ -92,9 +97,10 @@ const FeaturedData = [
   {
     id: 6,
     Image: "",
-    Title: "",
+    Title: "Website Title",
     Category: "",
-    Description: "",
+    Description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, maxime!",
     Stacks: {
       Stack1: "React",
       Stack2: "MUI",

@@ -1,6 +1,149 @@
-
-
-
 .Paginate_Container {
-    border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+
+  padding: 5px;
+  gap: 50px;
+
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+  position: relative;
+
+  height: fit-content;
+  width: fit-content;
+
+  .Card {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+    display: flex;
+
+    padding: 10px;
+    gap: 10px;
+
+    justify-content: space-between;
+    align-items: center;
+
+    .Imgae_Container {
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+        rgba(0, 0, 0, 0.23) 0px 3px 6px;
+      border: 2px solid #e3b261;
+      border-radius: 50%;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+
+      height: 150px;
+      width: 150px;
+
+      .Website_Image {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .Website_Information_Box {
+      display: flex;
+      flex-direction: column;
+
+      padding: 5px;
+      gap: 10px;
+
+      justify-content: space-evenly;
+      align-items: left;
+
+      width: 60%;
+
+      .Website_Title {
+        color: white;
+        font-family: "Nunito", sans-serif;
+        font-size: 20px;
+        font-weight: 300;
+
+        transition: 0.5s;
+      }
+
+      .Website_Description {
+        color: #c4c4c4;
+        font-family: "Nunito", sans-serif;
+        font-size: 15px;
+        font-style: italic;
+        font-weight: 300;
+
+        transition: 0.5s;
+        flex-wrap: wrap;
+      }
+
+      .Stack_Container {
+        display: flex;
+
+        padding: 5px;
+        gap: 20px;
+
+        justify-content: space-evenly;
+        align-items: center;
+
+        width: fit-content;
+
+        .Stack {
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+            rgba(0, 0, 0, 0.23) 0px 3px 6px;
+          background-color: rgba(0, 0, 0, 0.4);
+          border: 2px solid black;
+          display: flex;
+          padding: 2px;
+
+          color: #319795;
+          font-family: "Montserrat", sans-serif;
+          font-size: 12px;
+          font-weight: 400;
+        }
+      }
+    }
+
+    .Links_Container {
+      display: flex;
+      flex-direction: column;
+
+      justify-content: space-between;
+      align-items: center;
+
+      height: 100%;
+      width: fit-content;
+
+      .Link {
+        color: white;
+        font-family: "Nunito", sans-serif;
+        font-size: 20px;
+        font-weight: 300;
+
+        transition: 0.5s;
+      }
+
+      .Link:hover {
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+          rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+        transform: scale(0.9);
+      }
+
+      .Code_Background {
+        background-color: rgba(0, 0, 0, 0.4);
+        border: 2px solid black;
+        display: flex;
+        padding: 3px;
+      }
+
+      .Demo_Background {
+        background-color: rgba(0, 0, 0, 0.4);
+        border: 2px solid black;
+        display: flex;
+        padding: 3px;
+      }
+    }
+  }
 }
