@@ -8,6 +8,8 @@
   justify-content: center;
   align-items: center;
 
+  margin-top: 100px;
+
   overflow: hidden;
   position: relative;
 
@@ -73,6 +75,7 @@
         font-size: 15px;
         font-style: italic;
         font-weight: 300;
+        text-align: center;
 
         transition: 0.5s;
         flex-wrap: wrap;
@@ -80,6 +83,7 @@
 
       .Stack_Container {
         display: flex;
+        flex-wrap: wrap;
 
         padding: 5px;
         gap: 20px;
@@ -147,3 +151,41 @@
     }
   }
 }
+
+// Media Quries Start
+
+@media only screen and (max-width: 750px) {
+  .Paginate_Container {
+    .Card {
+      flex-direction: column;
+      gap: 20px;
+      .Website_Information_Box {
+        gap: 20px;
+        width: 100%;
+        align-items: center;
+      }
+
+      .Links_Container {
+        flex-direction: row;
+        height: fit-content;
+        width: 90%;
+        gap: 50px;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .Paginate_Container {
+    width: 100%;
+    .Card {
+      .Stack_Container {
+        justify-content: left;
+      }
+    }
+  }
+}
+
+// Media Quries End
