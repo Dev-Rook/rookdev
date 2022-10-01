@@ -1,0 +1,27 @@
+.Landing {
+  border: 1px solid white;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 5px;
+  gap: "";
+
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+  width: 1250px;
+
+  transition: 0.5s;
+}
+
+// Media Queries Start
+
+@media only screen and (max-width: 1250px) {
+  .Landing {
+    width: 100%;
+  }
+}
+
+// Media Queries End

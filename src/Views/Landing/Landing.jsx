@@ -3,7 +3,9 @@ import Styles from "../../Styles/Page-Styles/Landing/Landing.module.css"
 
 const Landing = () => {
   return (
-    <div className={Styles.Landing}></div>
+    <div className={Styles.Landing}>
+      
+    </div>
   )
 }
 

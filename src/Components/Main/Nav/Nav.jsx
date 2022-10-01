@@ -117,7 +117,7 @@ const Nav = () => {
                   sx={{ fontSize: 25 }}
                   className={Styles.Navlink_Icon}
                 />
-                Home
+                <p>Home</p>
               </li>
             </Link>
             <Link
@@ -130,7 +130,7 @@ const Nav = () => {
                   sx={{ fontSize: 25 }}
                   className={Styles.Navlink_Icon}
                 />
-                Portfolio
+                <p>Portfolio</p>
               </li>
             </Link>
             <Link
@@ -143,7 +143,7 @@ const Nav = () => {
                   sx={{ fontSize: 25 }}
                   className={Styles.Navlink_Icon}
                 />
-                Contact
+                <p>Contact</p>
               </li>
             </Link>
             <Link
@@ -156,7 +156,7 @@ const Nav = () => {
                   sx={{ fontSize: 25 }}
                   className={Styles.Navlink_Icon}
                 />
-                Dev Logs
+                <p>Dev Logs</p>
               </li>
             </Link>
             <li className={Styles.Menu_NavItem}>
@@ -183,6 +183,7 @@ const Nav = () => {
                     <a
                       className={Styles.Discord_Link}
                       target={"_blank"}
+                      rel={"noreferrer"}
                       href="https://discord.gg/ce7mtCbgmG"
                     >
                       <img
@@ -211,6 +212,7 @@ const Nav = () => {
             <h3 className={Styles.Title}>On The Web -</h3>
             <a
               target={"_blank"}
+              rel={"noreferrer"}
               onClick={showMenu}
               href="https://www.linkedin.com/in/dev-rook/"
               className={Styles.Weblink}
@@ -225,6 +227,7 @@ const Nav = () => {
             </a>
             <a
               target={"_blank"}
+              rel={"noreferrer"}
               onClick={showMenu}
               href="https://github.com/Dev-Rook"
               className={Styles.Weblink}
@@ -239,6 +242,7 @@ const Nav = () => {
             </a>
             <a
               target={"_blank"}
+              rel={"noreferrer"}
               onClick={showMenu}
               href="https://twitter.com/Dev_Rook"
               className={Styles.Weblink}
@@ -253,6 +257,7 @@ const Nav = () => {
             </a>
             <a
               target={"_blank"}
+              rel={"noreferrer"}
               onClick={showMenu}
               href="https://rxresu.me/dev.rook121/developer-resume"
               className={Styles.Weblink}

@@ -11,6 +11,7 @@
   height: fit-content;
   width: 1250px;
   z-index: 100;
+  /* width */
 }
 .Nav .Left_Side {
   display: flex;
@@ -178,11 +179,14 @@
   font-weight: 400;
 }
 .Nav .Mobile_Menu .Content_Container .Header .Close_Icon {
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
   color: white;
   position: absolute;
   right: -80px;
   cursor: pointer;
+  transition: 0.5s;
+}
+.Nav .Mobile_Menu .Content_Container .Header .Close_Icon:hover {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
 }
 .Nav .Mobile_Menu .Content_Container .Mobile_Navlink_Container {
   display: flex;
@@ -201,15 +205,13 @@
   font-family: "Nunito", sans-serif;
   font-size: 18px;
   font-weight: 200;
+  transition: 0.5s;
 }
 .Nav .Mobile_Menu .Content_Container .Mobile_Navlink_Container .Menu_NavItem .Navlink_Icon {
   color: #e3b261;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
 }
-.Nav .Mobile_Menu .Content_Container .Mobile_Navlink_Container .Menu_NavItem .Menu_Navlink:hover {
-  border-bottom: 1px solid rgb(255, 122, 0);
-}
-.Nav .Mobile_Menu .Content_Container .Mobile_Navlink_Container .Menu_NavItem .Menu_Navlink:active {
+.Nav .Mobile_Menu .Content_Container .Mobile_Navlink_Container .Menu_NavItem p:hover {
   border-bottom: 1px solid rgb(255, 122, 0);
 }
 .Nav .Mobile_Menu .Content_Container .Mobile_Navlink_Container .Menu_NavItem .Accordion {
@@ -250,6 +252,9 @@
   margin: auto;
   width: 20px;
 }
+.Nav .Mobile_Menu .Content_Container .Mobile_Navlink_Container .Menu_NavItem:hover {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
 .Nav .Mobile_Menu .Content_Container .Menu_Separater {
   border: 1px solid rgb(255, 122, 0);
   width: 100%;
@@ -283,6 +288,9 @@
 .Nav .Mobile_Menu .Content_Container .Weblink_Container .Weblink_Item .Weblink_Icon {
   color: rgb(160, 203, 220);
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+.Nav ::-webkit-scrollbar {
+  width: 0px;
 }
 .Nav .ShowMenu {
   transform: translateX(0%);

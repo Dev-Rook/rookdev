@@ -222,12 +222,16 @@
         }
 
         .Close_Icon {
-          box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
           color: white;
 
           position: absolute;
           right: -80px;
           cursor: pointer;
+          transition: 0.5s;
+        }
+
+        .Close_Icon:hover {
+          box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
         }
       }
 
@@ -255,17 +259,14 @@
           font-size: 18px;
           font-weight: 200;
 
+          transition: 0.5s;
+
           .Navlink_Icon {
             color: #e3b261;
             box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
           }
 
-          .Menu_Navlink:hover {
-            border-bottom: 1px solid rgb(255, 122, 0);
-            // -180px 0px 0px 1px inset
-          }
-
-          .Menu_Navlink:active {
+          p:hover {
             border-bottom: 1px solid rgb(255, 122, 0);
             // -180px 0px 0px 1px inset
           }
@@ -317,6 +318,12 @@
             }
           }
         }
+
+        .Menu_NavItem:hover {
+          box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+            rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+            rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        }
       }
 
       .Menu_Separater {
@@ -365,6 +372,20 @@
       }
     }
   }
+  /* width */
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  // /* Track */
+  // ::-webkit-scrollbar-track {
+  //   background: #f1f1f1;
+  // }
+
+  // /* Handle */
+  // ::-webkit-scrollbar-thumb {
+  //   background: #888;
+  // }
 
   .ShowMenu {
     transform: translateX(0%);
