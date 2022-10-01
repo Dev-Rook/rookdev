@@ -5,6 +5,7 @@ import Styles from "../../../../Styles/Pagination-Styles/General/Pagination.modu
 
 import CodeIcon from "@mui/icons-material/Code";
 import HttpIcon from "@mui/icons-material/Http";
+import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 
 // Material UI Imports End
 
@@ -20,7 +21,7 @@ const Featured = () => {
 
   return (
     <div className={Styles.Paginate_Container}>
-      {cardData.slice(0, 3).map((Card) => {
+      {cardData.slice(0, visible).map((Card) => {
         const { id, Image, Title, Description, Stacks, Links } = Card;
 
         return (
@@ -66,6 +67,7 @@ const Featured = () => {
       })}
       <div onClick={showMoreCards} className={Styles.Show_More_Button}>
         Show More
+        {/* <KeyboardArrowRightIcon sx={{ color: "#e3b261", fontSize: 30 }} /> */}
       </div>
     </div>
   );

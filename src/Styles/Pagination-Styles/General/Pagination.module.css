@@ -121,6 +121,24 @@
   display: flex;
   padding: 3px;
 }
+.Paginate_Container .Show_More_Button {
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 2px solid black;
+  display: flex;
+  padding: 3px;
+  gap: 10px;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #e3b261;
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  transition: 0.5s;
+}
+.Paginate_Container .Show_More_Button:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  transform: scale(0.9);
+}
 
 @media only screen and (max-width: 750px) {
   .Paginate_Container .Card {
