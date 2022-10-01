@@ -24,7 +24,7 @@ const Featured = () => {
         const { id, Image, Title, Description, Stacks, Links } = Card;
 
         return (
-          <div className={Styles.Card}>
+          <div className={Styles.Card} key={id}>
             <div className={Styles.Imgae_Container}>
               <img
                 src={Image}
