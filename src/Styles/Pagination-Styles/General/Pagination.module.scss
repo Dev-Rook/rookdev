@@ -151,29 +151,65 @@
     }
   }
 
-  .Show_More_Button {
-    background-color: rgba(0, 0, 0, 0.4);
-    border: 2px solid black;
+  .Card_Control_Box {
     display: flex;
-    padding: 3px;
+
     gap: 10px;
 
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    
-    color: #e3b261;
-    font-family: "Nunito", sans-serif;
-    font-size: 20px;
-    font-weight: 300;
+    overflow: hidden;
 
-    transition: 0.5s;
-  }
+    height: 100%;
+    width: 100%;
 
-  .Show_More_Button:hover {
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
-      rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    .Show_More_Button {
+      background-color: rgba(0, 0, 0, 0.4);
+      border: 2px solid black;
+      display: flex;
+      padding: 3px;
+      gap: 10px;
 
-    transform: scale(0.9);
+      justify-content: space-evenly;
+      align-items: center;
+
+      color: #e3b261;
+      font-family: "Nunito", sans-serif;
+      font-size: 20px;
+      font-weight: 300;
+
+      transition: 0.5s;
+    }
+
+    .Show_Less_Button {
+      background-color: rgba(0, 0, 0, 0.4);
+      border: 2px solid black;
+      display: flex;
+      padding: 3px;
+      gap: 10px;
+
+      justify-content: space-evenly;
+      align-items: center;
+
+      color: #e3b261;
+      font-family: "Nunito", sans-serif;
+      font-size: 20px;
+      font-weight: 300;
+
+      transition: 0.5s;
+      transform: translateX(100%);
+    }
+
+    .Show_More_Button:hover {
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+        rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+      transform: scale(0.9);
+    }
+
+    .ShowLessButton {
+      transform: translateX(0%);
+    }
   }
 }
 

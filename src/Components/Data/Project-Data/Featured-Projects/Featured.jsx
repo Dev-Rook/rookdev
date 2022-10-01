@@ -5,7 +5,8 @@ import Styles from "../../../../Styles/Pagination-Styles/General/Pagination.modu
 
 import CodeIcon from "@mui/icons-material/Code";
 import HttpIcon from "@mui/icons-material/Http";
-import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
+// import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
+import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 
 // Material UI Imports End
 
@@ -14,9 +15,23 @@ import FeaturedData from "./FeaturedData";
 const Featured = () => {
   const [cardData, setCardData] = useState(FeaturedData);
   const [visible, setVisible] = useState(3);
+  const [showLessButton, setShowLessButton] = useState(false);
 
   const showMoreCards = () => {
     setVisible((Cards) => Cards + 3);
+  };
+
+  const unPaginate = () => {
+    setShowLessButton((prev) => !prev);
+  };
+
+  const doubleFunction = () => {
+    showMoreCards();
+    unPaginate();
+  };
+
+  const showLessCards = () => {
+    setVisible((Cards) => Cards - 3);
   };
 
   return (
@@ -65,9 +80,22 @@ const Featured = () => {
           </div>
         );
       })}
-      <div onClick={showMoreCards} className={Styles.Show_More_Button}>
-        Show More
-        {/* <KeyboardArrowRightIcon sx={{ color: "#e3b261", fontSize: 30 }} /> */}
+
+      <div className={Styles.Card_Control_Box}>
+        <div onClick={doubleFunction} className={Styles.Show_More_Button}>
+          Show More
+          {/* <KeyboardArrowRightIcon sx={{ color: "#e3b261", fontSize: 30 }} /> */}
+        </div>
+
+        <div
+          onClick={showLessCards}
+          className={`${Styles.Show_Less_Button} ${
+            showLessButton ? Styles.ShowLessButton : ""
+          }`}
+        >
+          {/* Show Less */}
+          <KeyboardArrowUpIcon sx={{ color: "#e3b261", fontSize: 30 }} />
+        </div>
       </div>
     </div>
   );
