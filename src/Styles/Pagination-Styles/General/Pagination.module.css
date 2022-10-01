@@ -147,7 +147,8 @@
   .Paginate_Container {
     width: 100%;
   }
-  .Paginate_Container .Card .Stack_Container {
-    justify-content: left;
+  .Paginate_Container .Card .Website_Information_Box .Stack_Container {
+    justify-content: center;
+    gap: 6px;
   }
 }/*# sourceMappingURL=Pagination.module.css.map */

@@ -181,8 +181,11 @@
   .Paginate_Container {
     width: 100%;
     .Card {
-      .Stack_Container {
-        justify-content: left;
+      .Website_Information_Box {
+        .Stack_Container {
+          justify-content: center;
+          gap: 6px;
+        }
       }
     }
   }
