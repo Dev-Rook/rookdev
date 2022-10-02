@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   padding: 5px;
-  gap: 50px;
+  gap: 30px;
   justify-content: center;
   align-items: center;
   margin-top: 100px;
@@ -14,6 +14,21 @@
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+.Paginate_Container .Section_Title {
+  color: white;
+  font-family: "Nunito", sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  transition: 0.5s;
+}
+.Paginate_Container .Section_Description {
+  color: white;
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+  transition: 0.5s;
 }
 .Paginate_Container .Card {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
@@ -87,6 +102,12 @@
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
   font-weight: 400;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.Paginate_Container .Card .Website_Information_Box .Stack_Container .Stack:hover {
+  transform: scale(0.9);
+  color: #e3b261;
 }
 .Paginate_Container .Card .Links_Container {
   display: flex;

@@ -36,6 +36,8 @@ const Featured = () => {
 
   return (
     <div className={Styles.Paginate_Container}>
+      <h2 className={Styles.Section_Title}>Projects</h2>
+      <h2 className={Styles.Section_Description}>These are a handful featured projects</h2>
       {cardData.slice(0, visible).map((Card) => {
         const { id, Image, Title, Description, Stacks, Links } = Card;
 

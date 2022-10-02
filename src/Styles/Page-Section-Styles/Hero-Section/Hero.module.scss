@@ -1,0 +1,219 @@
+.Hero {
+  display: flex;
+  flex-direction: column;
+
+  padding: 10px;
+  gap: 50px;
+
+  justify-content: space-evenly;
+  align-items: left;
+
+  margin-top: 80px;
+
+  //   height: 100%;
+  width: 1200px;
+  position: relative;
+
+  .Hero_Board {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    display: flex;
+
+    height: 400px;
+    width: 100%;
+
+    transition: 0.5s;
+  }
+
+  .Content_Box {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-evenly;
+    align-items: center;
+
+    .Small_Text {
+      color: white;
+      font-family: "Nunito", sans-serif;
+      font-weight: 100;
+      font-size: 18px;
+      text-align: left;
+      margin: 0px;
+      transition: 0.5s;
+    }
+
+    .Large_Text {
+      color: white;
+      font-family: "Nunito", sans-serif;
+      font-weight: 400;
+      font-size: 90px;
+      text-align: center;
+      transition: 0.5s;
+
+      .Red_R {
+        color: red;
+        animation: flicker 1.5s infinite alternate;
+      }
+    }
+  }
+
+  .Info {
+    display: flex;
+    flex-direction: column;
+
+    gap: 35px;
+
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 100%;
+
+    .Info_Section {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+
+      justify-content: space-evenly;
+      align-items: center;
+
+      width: 100%;
+
+      .Title {
+        color: #f0e7db;
+        font-family: "Nunito", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+
+        text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+          0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+        width: fit-content;
+      }
+      .Bio_Text {
+        color: grey;
+        font-family: "Nunito", sans-serif;
+        font-style: italic;
+        font-size: 16px;
+        font-weight: 300;
+        transition: 0.5s;
+      }
+
+      .Web_Profiles {
+        gap: 20px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .WebLink {
+          color: #319795;
+          font-family: "Roboto Flex", sans-serif;
+          font-size: 15px;
+          font-weight: 500;
+
+          gap: 8px;
+          justify-content: center;
+          align-items: center;
+          display: flex;
+        }
+      }
+
+      .Tech {
+        gap: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 8px;
+        .Tech_Card {
+          display: flex;
+
+          border-radius: 8px;
+
+          height: 50px;
+          width: 50px;
+
+          overflow: hidden;
+          transition: 0.5s;
+
+          .Tech_Image {
+            margin: auto;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            transition: 0.5s;
+            box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px,
+              rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px,
+              rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .Hero {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .Hero {
+    .Content_Box {
+      .Large_Text {
+        font-size: 85px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .Hero {
+    .Hero_Board {
+      height: 300px;
+    }
+    .Content_Box {
+      .Large_Text {
+        font-size: 85px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .Hero {
+    .Content_Box {
+      .Tech {
+        overflow: scroll;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  .Hero {
+    .Content_Box {
+      .Large_Text {
+        font-size: 50px;
+      }
+    }
+  }
+}
+
+@keyframes flicker {
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    text-shadow: 0 0 7px #f20407, 0 0 10px #f20407, 0 0 21px #f20407,
+      0 0 42px #ff7a00, 0 0 82px #ff7a00, 0 0 92px #ff7a00, 0 0 102px #ff7a00,
+      0 0 151px #ff7a00;
+  }
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+  }
+}
