@@ -78,6 +78,7 @@
   font-size: 16px;
   font-weight: 300;
   transition: 0.5s;
+  text-align: center;
 }
 .Hero .Info .Info_Section .Web_Profiles {
   gap: 20px;
