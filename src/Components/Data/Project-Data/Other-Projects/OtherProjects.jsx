@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import Styles from "../../../../Styles/Swiper-Styles/Other-Projects/OtherProjects.module.css";
 
-
-
 // Material UI Imports Start
 
 import CodeIcon from "@mui/icons-material/Code";
@@ -34,10 +32,10 @@ const OtherProjects = () => {
       <Swiper
         speed={800}
         modules={[Navigation, FreeMode, Mousewheel, Autoplay]}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
+        // autoplay={{
+        //   delay: 2500,
+        //   disableOnInteraction: false,
+        // }}
         grabCursor={true}
         loop
         pagination={{
@@ -73,52 +71,56 @@ const OtherProjects = () => {
           },
         }}
       >
-        <div className={Styles.Tray}>
-          {cardData.map((slide) => {
-            const { id, Title, Image, Description, Stacks, Links } = slide;
+        {cardData.map((slide) => {
+          const { id, Title, Image, Description, Stacks, Links } = slide;
 
-            return (
-                <div className={Styles.Card} key={id}>
-                  <div className={Styles.Imgae_Container}>
+          return (
+            <SwiperSlide className={Styles.Slide}>
+              <div className={Styles.Card} key={id}>
+                <div className={Styles.Imgae__Title_Container}>
+                  <div className={Styles.Image_Container}>
                     <img
                       src={Image}
                       alt={"WebsiteImage"}
                       className={Styles.Website_Image}
                     />
                   </div>
-                  <div className={Styles.Website_Information_Box}>
-                    <h3 className={Styles.Website_Title}>{Title}</h3>
-                    <div className={Styles.Website_Description}>{Description}</div>
-                    <div className={Styles.Stack_Container}>
-                      <div className={Styles.Stack}>{Stacks.Stack1}</div>
-                      <div className={Styles.Stack}>{Stacks.Stack2}</div>
-                      <div className={Styles.Stack}>{Stacks.Stack3}</div>
-                      <div className={Styles.Stack}>{Stacks.Stack4}</div>
-                      <div className={Styles.Stack}>{Stacks.Stack5}</div>
-                    </div>
+                  <h3 className={Styles.Website_Title}>{Title}</h3>
+                </div>
+                <div className={Styles.Website_Information_Box}>
+                  <div className={Styles.Website_Description}>
+                    {Description}
                   </div>
-                  <div className={Styles.Links_Container}>
-                    <a
-                      href={Links.Code}
-                      target={"_blank"}
-                      rel={"noreferrer"}
-                      className={`${Styles.Link} ${Styles.Code_Background}`}
-                    >
-                      <CodeIcon sx={{ color: "#2c7a7b", fontSize: 30 }} />
-                    </a>
-                    <a
-                      href={Links.Demo}
-                      target={"_blank"}
-                      rel={"noreferrer"}
-                      className={`${Styles.Link} ${Styles.Demo_Background}`}
-                    >
-                      <HttpIcon sx={{ color: "#e3b261", fontSize: 30 }} />
-                    </a>
+                  <div className={Styles.Stack_Container}>
+                    <div className={Styles.Stack}>{Stacks.Stack1}</div>
+                    <div className={Styles.Stack}>{Stacks.Stack2}</div>
+                    <div className={Styles.Stack}>{Stacks.Stack3}</div>
+                    <div className={Styles.Stack}>{Stacks.Stack4}</div>
+                    <div className={Styles.Stack}>{Stacks.Stack5}</div>
                   </div>
                 </div>
-              );
-          })}
-        </div>
+                <div className={Styles.Links_Container}>
+                  <a
+                    href={Links.Code}
+                    target={"_blank"}
+                    rel={"noreferrer"}
+                    className={`${Styles.Link} ${Styles.Code_Background}`}
+                  >
+                    <CodeIcon sx={{ color: "#2c7a7b", fontSize: 30 }} />
+                  </a>
+                  <a
+                    href={Links.Demo}
+                    target={"_blank"}
+                    rel={"noreferrer"}
+                    className={`${Styles.Link} ${Styles.Demo_Background}`}
+                  >
+                    <HttpIcon sx={{ color: "#e3b261", fontSize: 30 }} />
+                  </a>
+                </div>
+              </div>
+            </SwiperSlide>
+          );
+        })}
       </Swiper>
     </div>
   );
