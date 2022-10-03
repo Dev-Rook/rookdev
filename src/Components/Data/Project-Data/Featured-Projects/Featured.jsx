@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Styles from "../../../../Styles/Pagination-Styles/General/Pagination.module.css";
 
-import { Howler } from "howler";
+// import { Howler } from "howler";
 
 // Material UI Imports Start
 
