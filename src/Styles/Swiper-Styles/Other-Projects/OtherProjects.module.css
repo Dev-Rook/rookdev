@@ -1,5 +1,4 @@
 .Other_Projects_Container {
-  border: 1px solid white;
   display: flex;
   flex-direction: column;
   padding: 5px;
@@ -61,7 +60,6 @@
 .Other_Projects_Container .Swiper .Card .Website_Information_Box {
   display: flex;
   flex-direction: column;
-  padding: 5px;
   gap: 10px;
   justify-content: space-evenly;
   align-items: left;
@@ -80,7 +78,6 @@
 .Other_Projects_Container .Swiper .Card .Website_Information_Box .Stack_Container {
   display: flex;
   flex-wrap: wrap;
-  padding: 5px;
   gap: 5px;
   justify-content: space-evenly;
   align-items: center;
@@ -109,9 +106,7 @@
   justify-content: space-between;
   align-items: center;
   height: 100%;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 100%;
 }
 .Other_Projects_Container .Swiper .Card .Links_Container .Link {
   color: white;
