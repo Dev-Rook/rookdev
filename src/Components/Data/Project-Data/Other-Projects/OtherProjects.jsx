@@ -29,13 +29,14 @@ const OtherProjects = () => {
 
   return (
     <div className={Styles.Other_Projects_Container}>
+      <h3 className={Styles.Slider_Title}>Other Projects</h3>
       <Swiper
         speed={800}
         modules={[Navigation, FreeMode, Mousewheel, Autoplay]}
-        // autoplay={{
-        //   delay: 2500,
-        //   disableOnInteraction: false,
-        // }}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
         grabCursor={true}
         loop
         pagination={{
