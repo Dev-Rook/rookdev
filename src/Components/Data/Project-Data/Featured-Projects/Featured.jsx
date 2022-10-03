@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Styles from "../../../../Styles/Pagination-Styles/General/Pagination.module.css";
 
+import { Howler } from "howler";
+
 // Material UI Imports Start
 
 import CodeIcon from "@mui/icons-material/Code";
