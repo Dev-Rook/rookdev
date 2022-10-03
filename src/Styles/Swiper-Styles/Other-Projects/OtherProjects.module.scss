@@ -26,6 +26,16 @@
       0px 18px 23px rgba(0, 0, 0, 0.1);
   }
 
+  .Section_Description {
+    color: white;
+    font-family: "Nunito", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+
+    transition: 0.5s;
+  }
+
   .Swiper {
     .Card {
       box-shadow: rgba(255, 555, 255, 0.16) 0px 3px 6px,

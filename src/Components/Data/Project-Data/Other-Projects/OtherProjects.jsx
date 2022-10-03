@@ -30,6 +30,7 @@ const OtherProjects = () => {
   return (
     <div className={Styles.Other_Projects_Container}>
       <h3 className={Styles.Slider_Title}>Other Projects</h3>
+      <h2 className={Styles.Section_Description}>These are a other projects I have worked on or is still in development.</h2>
       <Swiper
         speed={800}
         modules={[Navigation, FreeMode, Mousewheel, Autoplay]}
