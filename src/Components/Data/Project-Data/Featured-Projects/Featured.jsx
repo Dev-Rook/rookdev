@@ -23,14 +23,24 @@ const Featured = () => {
     setVisible((Cards) => Cards + 3);
   };
 
-  const unPaginate = () => {
-    setShowLessButton((prev) => !prev);
-  };
+  // const unPaginate = () => {
+  //   setShowLessButton((prev) => !prev);
+  // };
+    
+  const moreThanSix = (e) => {
+    if(visible > 3) {
+      setShowLessButton((prev) => !prev)
+      // setShowLessButton(true)
+      console.log("Is working 😎")
+    }
+  }
 
   const doubleFunction = () => {
     showMoreCards();
-    unPaginate();
+    // unPaginate();
+    moreThanSix();
   };
+
 
   const showLessCards = () => {
     setVisible((Cards) => Cards - 3);
@@ -86,7 +96,9 @@ const Featured = () => {
       })}
 
       <div className={Styles.Card_Control_Box}>
-        <div onClick={doubleFunction} className={Styles.Show_More_Button}>
+        <div 
+        onClick={doubleFunction} 
+        className={Styles.Show_More_Button}>
           Show More
           {/* <KeyboardArrowRightIcon sx={{ color: "#e3b261", fontSize: 30 }} /> */}
         </div>

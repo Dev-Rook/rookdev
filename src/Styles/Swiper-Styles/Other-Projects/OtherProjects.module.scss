@@ -12,7 +12,7 @@
   position: relative;
 
   height: fit-content;
-  width: 100%;
+  width: 1000px;
 
   .Slider_Title {
     color: white;
@@ -197,5 +197,11 @@
         }
       }
     }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .Other_Projects_Container {
+    width: 100%;
   }
 }
