@@ -23,10 +23,10 @@ const Landing = () => {
             rel={"noreferrer"}
             href="https://discord.gg/ce7mtCbgmG"
           >
-            <div className={Styles.Contact_Button}>Discord</div>
+            <div className={`${Styles.Contact_Button} ${Styles.Discord__Button}`}>Discord</div>
           </a>
           <Link to={"Contact"}>
-            <div className={Styles.Contact_Button}>Contact</div>
+            <div className={`${Styles.Contact_Button} ${Styles.Contact__Button}`}>Contact</div>
           </Link>
         </div>
       </div>

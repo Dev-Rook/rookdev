@@ -56,8 +56,28 @@
 
       .Contact_Button {
         padding: 5px;
-        border: 1px solid white;
+        border: 1px solid black;
         border-radius: 5px;
+
+
+        color: white;
+        font-family: "Nunito", sans-serif;
+        font-size: 18px;
+        font-style: italic;
+        font-weight: 400;
+        text-align: center;
+    
+        transition: 0.5s;
+      }
+
+      .Discord__Button {
+        background-color: rgba(0, 0, 0, 0.4);
+        color: #2c7a7b;
+      }
+
+      .Contact__Button {
+        background-color: rgba(0, 0, 0, 0.4);
+        color: #e3b261;
       }
     }
   }

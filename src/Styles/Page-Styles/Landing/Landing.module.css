@@ -46,8 +46,23 @@
 }
 .Landing .Contact_Implore_Box .Button_Container .Contact_Button {
   padding: 5px;
-  border: 1px solid white;
+  border: 1px solid black;
   border-radius: 5px;
+  color: white;
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 400;
+  text-align: center;
+  transition: 0.5s;
+}
+.Landing .Contact_Implore_Box .Button_Container .Discord__Button {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #2c7a7b;
+}
+.Landing .Contact_Implore_Box .Button_Container .Contact__Button {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #e3b261;
 }
 
 @media only screen and (max-width: 1250px) {
