@@ -12,18 +12,17 @@
   position: relative;
 
   height: fit-content;
-  width: 1000px;
+  width: fit-content;
 
-  .Slider_Title {
+  .Section_Title {
     color: white;
     font-family: "Nunito", sans-serif;
     font-size: 30px;
     font-weight: 300;
 
-    transition: 0.5s;
-
     text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
       0px 18px 23px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
   }
 
   .Section_Description {
@@ -36,42 +35,44 @@
     transition: 0.5s;
   }
 
-  .Swiper {
-    // border: 1px solid rgba(227, 178, 97, 0.2);
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
+  .Card {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 
-    overflow: hidden;
-    position: relative;
     display: flex;
-    width: 100%;
 
-    .Social_Card_Container {
+    padding: 10px;
+    gap: 10px;
+
+    justify-content: space-between;
+    align-items: center;
+
+    width: 500px;
+
+    .Imgae__Title_Container {
       display: flex;
-      flex-direction: column;
 
-      padding: 10px;
-      gap: 10px;
+      gap: 30px;
 
-      justify-content: space-between;
+      justify-content: space-evenly;
       align-items: center;
 
-      width: 300px;
+      width: fit-content;
+      margin: auto;
+      margin-left: 0px;
 
       .Image_Container {
         box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
           rgba(0, 0, 0, 0.23) 0px 3px 6px;
-        border: 2px solid #e3b261;
-        border-radius: 50%;
+        border: 1px solid #e3b261;
+          border-radius: 50%;
 
         display: flex;
         justify-content: center;
         align-items: center;
         overflow: hidden;
 
-        height: 150px;
-        width: 150px;
+        height: 100px;
+        width: 100px;
 
         margin-left: 0px;
 
@@ -91,11 +92,20 @@
         transition: 0.5s;
       }
     }
-  }
-}
 
-@media only screen and (max-width: 1000px) {
-  .Experience_Container {
-    width: 100%;
+    .Social_Button {
+      padding: 5px;
+      background-color: rgba(0, 0, 0, 0.4);
+      border: 1px solid black;
+      border-radius: 5px;
+
+      color: #2c7a7b;
+      font-family: "Nunito", sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      text-align: center;
+
+      transition: 0.5s;
+    }
   }
 }
