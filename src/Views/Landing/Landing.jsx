@@ -18,9 +18,10 @@ const Landing = () => {
       <Featured />
       <OtherProjects />
       <Experience />
+      <Social />
 
       <div className={Styles.Contact_Implore_Box}>
-        <h3 className={Styles.Section_Title}>Want To Get In Touch?</h3>
+        <h3 className={Styles.Section_Title}>Get In Touch?</h3>
         <h3 className={Styles.Section_Description}>
           Join my Discord or shoot me a message VIA contact form.
         </h3>
@@ -45,8 +46,6 @@ const Landing = () => {
           </Link>
         </div>
       </div>
-
-      <Social />
     </div>
   );
 };
