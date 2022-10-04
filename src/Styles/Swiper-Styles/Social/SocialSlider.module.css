@@ -86,4 +86,19 @@
   font-weight: 400;
   text-align: center;
   transition: 0.5s;
+}
+
+@media only screen and (max-width: 500px) {
+  .Social_Container {
+    width: 100%;
+  }
+  .Social_Container .Card {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .Social_Container .Card .Imgae__Title_Container .Image_Container {
+    height: 80px;
+    width: 80px;
+  }
 }/*# sourceMappingURL=SocialSlider.module.css.map */

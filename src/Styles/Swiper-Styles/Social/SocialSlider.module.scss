@@ -64,7 +64,7 @@
         box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
           rgba(0, 0, 0, 0.23) 0px 3px 6px;
         border: 1px solid #e3b261;
-          border-radius: 50%;
+        border-radius: 50%;
 
         display: flex;
         justify-content: center;
@@ -106,6 +106,28 @@
       text-align: center;
 
       transition: 0.5s;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .Social_Container {
+    width: 100%;
+    .Card {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .Social_Container {
+    .Card {
+      .Imgae__Title_Container {
+        .Image_Container {
+          height: 80px;
+          width: 80px;
+        }
+      }
     }
   }
 }
