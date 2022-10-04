@@ -7,6 +7,7 @@ import Landing from "./Views/Landing/Landing";
 import Portfolio from "./Views/Portfolio/Portfolio";
 import Contact from "./Views/Contact/Contact";
 import DevLogs from "./Views/Dev-Logs/DevLogs";
+import Footer from "./Components/Main/Footer/Footer";
 
 function App() {
   return (
@@ -19,8 +20,9 @@ function App() {
           <Route path={"Portfolio"} element={<Portfolio />} />
           <Route path={"Contact"} element={<Contact />} />
           <Route path={"DevLogs"} element={<DevLogs />} />
-          
         </Routes>
+
+        <Footer />
       </BrowserRouter>
     </div>
   );
