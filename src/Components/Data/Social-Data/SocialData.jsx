@@ -15,7 +15,7 @@ const SocialData = [
     id: 3,
     Image: "https://github.com/Dev-Rook/rookdev/blob/master/src/Assests/Icons/Twitter-Icon.png?raw=true",
     Name: "Twitter",
-    Link: "",
+    Link: "https://twitter.com/Dev_Rook",
   },
   {
     id: 4,
@@ -27,7 +27,7 @@ const SocialData = [
     id: 5,
     Image: "https://github.com/Dev-Rook/rookdev/blob/master/src/Assests/Icons/CV-Logo.png?raw=true",
     Name: "Resume",
-    Link: "",
+    Link: "https://rxresu.me/dev.rook121/developer-resume",
   },
 ];
 
