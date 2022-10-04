@@ -26,10 +26,15 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 const Nav = () => {
   const [menu, setMenu] = useState(false);
+  const [hideMenu, setHideMenu] = useState(true);
 
   const showMenu = () => {
     setMenu((prev) => !prev);
   };
+
+  const hideMenuFunction = () => {
+    setHideMenu((prev) => !prev)
+  }
 
   const [expanded, setExpanded] = React.useState(false);
 
