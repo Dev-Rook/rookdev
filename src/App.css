@@ -30,3 +30,17 @@ ul {
   height: 100%;
   width: 100%;
 }
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: rgb(0, 0, 0) 3px 3px 6px 0px inset, rgba(0, 0, 0,) -3px -3px 6px 1px inset;
+  background: rgb(26, 26, 27);
+}
+
+::-webkit-scrollbar-thumb {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  background: #e3b261;
+}
