@@ -28,7 +28,7 @@ const Experience = () => {
         speed={800}
         modules={[Navigation, FreeMode, Mousewheel, Autoplay]}
         autoplay={{
-          delay: 2000,
+          delay: 3000,
           disableOnInteraction: false,
         }}
         grabCursor={true}
