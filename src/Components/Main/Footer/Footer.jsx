@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div className={Styles.Footer}>
         {/* ※ End Of Website ※ */}
-        © 2022 Developed by Daniel Brown.
+        © 2022 Developer Rook.
     </div>
   )
 }
