@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Styles from "../../../Styles/Swiper-Styles/Social/SocialSlider.module.css";
+import Styles from "../../../Styles/Component-Styles/Social/Social.module.css";
 
 // Material UI Imports Start
 
@@ -24,7 +24,7 @@ import "swiper/css/scrollbar";
 
 import SocialData from "./SocialData";
 
-const SocialSlider = () => {
+const Social = () => {
   const [cardData, setCardData] = useState(SocialData);
 
   return (
@@ -51,4 +51,4 @@ const SocialSlider = () => {
   );
 };
 
-export default SocialSlider;
+export default Social;

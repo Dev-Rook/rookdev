@@ -7,7 +7,7 @@ import Hero from "../_Page-Sections_/Hero/Hero";
 import Featured from "../../Components/Data/Project-Data/Featured-Projects/Featured";
 import OtherProjects from "../../Components/Data/Project-Data/Other-Projects/OtherProjects";
 import Experience from "../../Components/Data/Experience-Data/Experience";
-import SocialSlider from "../../Components/Data/Social-Data/SocialSlider";
+import Social from "../../Components/Data/Social-Data/Social";
 
 const Landing = () => {
   return (
@@ -44,7 +44,7 @@ const Landing = () => {
         </div>
       </div>
 
-      <SocialSlider />
+      <Social />
     </div>
   );
 };
