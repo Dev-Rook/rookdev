@@ -11,7 +11,7 @@ const Social = () => {
       <h3 className={Styles.Section_Title}>Social</h3>
       <h2 className={Styles.Section_Description}>Find me on these platforms</h2>
       {cardData.map((Card) => {
-        const { id, Image, Name } = Card;
+        const { id, Image, Name, Link } = Card;
 
         return (
           <div className={Styles.Card} key={id}>
@@ -22,7 +22,14 @@ const Social = () => {
               <h3 className={Styles.Name}>{Name}</h3>
             </div>
 
-            <div className={Styles.Social_Button}>View</div>
+            <a
+              target={"_blank"}
+              rel={"noreferrer"}
+              href={Link}
+              className={Styles.Social_Button}
+            >
+              View
+            </a>
           </div>
         );
       })}
