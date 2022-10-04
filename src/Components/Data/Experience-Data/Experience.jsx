@@ -22,7 +22,7 @@ const Experience = () => {
     <div className={Styles.Experience_Container}>
       <h3 className={Styles.Slider_Title}>Experience</h3>
       <h2 className={Styles.Section_Description}>
-        These are a companies that I have worked at/for
+      Where I've Worked
       </h2>
       <Swiper
         speed={800}
