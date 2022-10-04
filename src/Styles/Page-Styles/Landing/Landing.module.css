@@ -9,6 +9,17 @@
   width: 1250px;
   transition: 0.5s;
 }
+.Landing .Page_Title {
+  color: white;
+  font-family: "Nunito", sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+  text-align: center;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+  margin: auto;
+  margin-top: 100px;
+}
 .Landing .Contact_Implore_Box {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   display: flex;
@@ -27,6 +38,7 @@
   font-family: "Nunito", sans-serif;
   font-size: 30px;
   font-weight: 300;
+  text-align: center;
   text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
   transition: 0.5s;
 }

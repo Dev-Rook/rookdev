@@ -12,7 +12,9 @@ import Social from "../../Components/Data/Social-Data/Social";
 const Landing = () => {
   return (
     <div className={Styles.Landing}>
-      <Hero />
+      {/* <Hero /> */}
+
+      <h3 className={Styles.Page_Title}>Dashboard</h3>
       <Featured />
       <OtherProjects />
       <Experience />
