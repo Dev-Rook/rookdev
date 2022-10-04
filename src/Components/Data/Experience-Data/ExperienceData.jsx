@@ -6,7 +6,7 @@ const ExperienceData = [
     Description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, maxime!",
     Links: {
-      FaceBook: "",
+      Website: "",
       LinkedIn: "",
       Twitter: "",
       YouTube: "",
@@ -19,7 +19,7 @@ const ExperienceData = [
     Description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, maxime!",
     Links: {
-      FaceBook: "",
+      Website: "",
       LinkedIn: "",
       Twitter: "",
       YouTube: "",
@@ -32,7 +32,7 @@ const ExperienceData = [
     Description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, maxime!",
     Links: {
-      FaceBook: "",
+      Website: "",
       LinkedIn: "",
       Twitter: "",
       YouTube: "",
@@ -45,7 +45,7 @@ const ExperienceData = [
     Description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, maxime!",
     Links: {
-      FaceBook: "",
+      Website: "",
       LinkedIn: "",
       Twitter: "",
       YouTube: "",
@@ -58,7 +58,7 @@ const ExperienceData = [
     Description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, maxime!",
     Links: {
-      FaceBook: "",
+      Website: "",
       LinkedIn: "",
       Twitter: "",
       YouTube: "",

@@ -1,0 +1,101 @@
+.Social_Container {
+  display: flex;
+  flex-direction: column;
+
+  padding: 5px;
+  gap: 30px;
+
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+  position: relative;
+
+  height: fit-content;
+  width: 1000px;
+
+  .Slider_Title {
+    color: white;
+    font-family: "Nunito", sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+
+    transition: 0.5s;
+
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
+      0px 18px 23px rgba(0, 0, 0, 0.1);
+  }
+
+  .Section_Description {
+    color: white;
+    font-family: "Nunito", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+
+    transition: 0.5s;
+  }
+
+  .Swiper {
+    // border: 1px solid rgba(227, 178, 97, 0.2);
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    width: 100%;
+
+    .Social_Card_Container {
+      display: flex;
+      flex-direction: column;
+
+      padding: 10px;
+      gap: 10px;
+
+      justify-content: space-between;
+      align-items: center;
+
+      width: 300px;
+
+      .Image_Container {
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+          rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        border: 2px solid #e3b261;
+        border-radius: 50%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+
+        height: 150px;
+        width: 150px;
+
+        margin-left: 0px;
+
+        .Website_Image {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .Name {
+        color: white;
+        font-family: "Nunito", sans-serif;
+        font-size: 20px;
+        font-weight: 300;
+
+        transition: 0.5s;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .Experience_Container {
+    width: 100%;
+  }
+}

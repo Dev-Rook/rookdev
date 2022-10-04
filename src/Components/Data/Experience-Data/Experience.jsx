@@ -84,10 +84,10 @@ const Experience = () => {
                   <a
                     target={"_blank"}
                     rel={"noreferrer"}
-                    href={Links.FaceBook}
+                    href={Links.Website}
                     className={Styles.Link}
                   >
-                    FaceBook
+                    Website
                   </a>
                   <a
                     target={"_blank"}
