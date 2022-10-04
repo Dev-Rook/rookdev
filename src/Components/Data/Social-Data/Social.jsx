@@ -1,27 +1,6 @@
 import React, { useState } from "react";
 import Styles from "../../../Styles/Component-Styles/Social/Social.module.css";
 
-// Material UI Imports Start
-
-import CodeIcon from "@mui/icons-material/Code";
-import HttpIcon from "@mui/icons-material/Http";
-// import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
-import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
-
-// Material UI Imports End
-
-// Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, FreeMode, Autoplay, Mousewheel } from "swiper";
-
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/free-mode";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
-// import "swiper/css/effect-fade ";
-
 import SocialData from "./SocialData";
 
 const Social = () => {

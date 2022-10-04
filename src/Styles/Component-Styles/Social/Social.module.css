@@ -51,18 +51,14 @@
   margin-left: 0px;
 }
 .Social_Container .Card .Imgae__Title_Container .Image_Container {
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-  border: 1px solid #e3b261;
-  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  height: 100px;
-  width: 100px;
-  margin-left: 0px;
+  height: 150px;
+  width: 150px;
 }
-.Social_Container .Card .Imgae__Title_Container .Image_Container .Website_Image {
+.Social_Container .Card .Imgae__Title_Container .Image_Container .Social_Image {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
