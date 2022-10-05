@@ -2,9 +2,11 @@
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   background-color: rgba(0, 0, 0, 0.4);
   display: flex;
+  flex-direction: column;
   position: absolute;
   bottom: 0px;
   padding: 5px;
+  gap: 10px;
   justify-content: center;
   align-items: center;
   height: -webkit-fit-content;
@@ -18,6 +20,90 @@
   font-weight: 200;
   text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
   transition: 0.5s;
+}
+.Footer .Logo__Brand {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+.Footer .Logo__Brand .Logo_Container {
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  border: 2px solid #e3b261;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.Footer .Logo__Brand .Logo_Container .Logo {
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.5s;
+}
+.Footer .Logo__Brand .Brand {
+  color: #e3b261;
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  cursor: pointer;
+}
+.Footer .Navlink_Container {
+  display: flex;
+  padding: 5px;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+.Footer .Navlink_Container .NavItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Footer .Navlink_Container .NavItem .Navlink {
+  color: white;
+  font-family: "Nunito", sans-serif;
+  font-size: 15px;
+  font-weight: 200;
+}
+.Footer .Navlink_Container .NavItem .NavIcon {
+  color: #e3b261;
+  display: flex;
+  margin: auto;
+}
+.Footer .Navlink_Container .NavItem .Navlink:hover {
+  border-bottom: 1px solid rgb(255, 122, 0);
+}
+.Footer .Navlink_Container .NavItem .Navlink:active {
+  border-bottom: 1px solid rgb(255, 122, 0);
+}
+.Footer .Menu_Icon {
+  color: white;
+  border: 1px solid rgba(240, 231, 219, 0.5);
+  border-radius: 3px;
+  padding: 3px;
+  display: none;
+  width: 30px;
+  transform: rotateY(180deg);
+  cursor: pointer;
+  transition: 0.5s;
+}
+.Footer .Menu_Icon:hover {
+  border: 1px solid rgba(255, 122, 0, 0.5);
+  color: black;
+  background-color: white;
+}
+.Footer .Menu_Icon:active {
+  border: 1px solid rgba(255, 122, 0, 0.5);
 }
 .Footer span {
   -webkit-animation: flicker 1.5s infinite alternate;
