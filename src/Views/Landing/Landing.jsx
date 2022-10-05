@@ -15,6 +15,11 @@ const Landing = () => {
       {/* <Hero /> */}
 
       <h3 className={Styles.Page_Title}>Dashboard</h3>
+
+      <div className={Styles.Tech_Stack_Container}>
+        
+      </div>
+
       <Featured />
       <OtherProjects />
       <Experience />
