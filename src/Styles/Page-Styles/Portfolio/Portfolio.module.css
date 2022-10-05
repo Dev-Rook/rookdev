@@ -1,0 +1,85 @@
+.Portfolio {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  gap: 80px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 1250px;
+  transition: 0.5s;
+}
+.Portfolio .Page_Title {
+  color: white;
+  font-family: "Nunito", sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+  text-align: center;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+  margin: auto;
+  margin-top: 100px;
+}
+.Portfolio .Contact_Implore_Box {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 30px;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 200px;
+}
+.Portfolio .Contact_Implore_Box .Section_Title {
+  color: white;
+  font-family: "Nunito", sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  text-align: center;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+}
+.Portfolio .Contact_Implore_Box .Section_Description {
+  color: white;
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 200;
+  text-align: center;
+  transition: 0.5s;
+}
+.Portfolio .Contact_Implore_Box .Button_Container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.Portfolio .Contact_Implore_Box .Button_Container .Contact_Button {
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: white;
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  transition: 0.5s;
+}
+.Portfolio .Contact_Implore_Box .Button_Container .Discord__Button {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #2c7a7b;
+}
+.Portfolio .Contact_Implore_Box .Button_Container .Contact__Button {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #e3b261;
+}
+
+@media only screen and (max-width: 1250px) {
+  .Portfolio {
+    width: 100%;
+  }
+}/*# sourceMappingURL=Portfolio.module.css.map */
