@@ -5,12 +5,19 @@ import { Link } from "react-router-dom";
 
 import LogoDevIcon from "@mui/icons-material/LogoDev";
 
-const Footer = ({scrollUp}) => {
+const Footer = ({ scrollUp }) => {
+  const scrollUpOnClick = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className={Styles.Footer}>
       <div className={Styles.Footer_Content}>
         <div className={Styles.Logo__Brand}>
-          <Link onClick={scrollUp} to={"/"}>
+          <Link onClick={scrollUpOnClick} to={"/"}>
             <div className={Styles.Logo_Container}>
               <img
                 src={require("../../../Assests/Images/Logo.png")}

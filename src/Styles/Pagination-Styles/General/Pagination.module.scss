@@ -14,6 +14,8 @@
   height: fit-content;
   width: fit-content;
 
+  transition: .5s;
+
   .Section_Title {
     color: white;
     font-family: "Nunito", sans-serif;
@@ -190,7 +192,9 @@
     overflow: hidden;
 
     height: 100%;
-    width: 100%;
+    width: fit-content;
+
+    display: none;
 
     .Show_More_Button {
       background-color: rgba(0, 0, 0, 0.4);
@@ -230,6 +234,8 @@
       transition: 0.5s;
       transform: translateX(100%);
       cursor: pointer;
+
+      display: none;
     }
 
     .Show_More_Button:hover {

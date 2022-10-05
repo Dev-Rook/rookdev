@@ -13,6 +13,7 @@
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  transition: 0.5s;
 }
 .Paginate_Container .Section_Title {
   color: white;
@@ -150,7 +151,10 @@
   align-items: center;
   overflow: hidden;
   height: 100%;
-  width: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: none;
 }
 .Paginate_Container .Card_Control_Box .Show_More_Button {
   background-color: rgba(0, 0, 0, 0.4);
@@ -182,6 +186,7 @@
   transition: 0.5s;
   transform: translateX(100%);
   cursor: pointer;
+  display: none;
 }
 .Paginate_Container .Card_Control_Box .Show_More_Button:hover {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
