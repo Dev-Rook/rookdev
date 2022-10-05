@@ -3,12 +3,14 @@ import Styles from "../../Styles/Page-Styles/Portfolio/Portfolio.module.css";
 
 import { Link } from "react-router-dom";
 
+import AllProjects from "../../Components/Data/Project-Data/All-Projects/AllProjects";
+
 const Portfolio = () => {
   return (
     <div className={Styles.Portfolio}>
       <h3 className={Styles.Page_Title}>Portfolio</h3>
 
-
+      <AllProjects />
 
       <div className={Styles.Contact_Implore_Box}>
         <h3 className={Styles.Section_Title}>Get In Touch?</h3>
