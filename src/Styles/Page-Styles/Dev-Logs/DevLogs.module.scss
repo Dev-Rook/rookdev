@@ -1,4 +1,4 @@
-.Contact {
+.DevLogs {
   display: flex;
   flex-direction: column;
 
@@ -70,7 +70,7 @@
     .Button_Container {
       display: flex;
       width: 100%;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
 
       .Contact_Button {
@@ -103,7 +103,7 @@
 // Media Queries Start
 
 @media only screen and (max-width: 1250px) {
-  .Contact {
+  .DevLogs {
     width: 100%;
   }
 }
