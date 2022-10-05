@@ -29,6 +29,22 @@ ul {
 
   height: 100%;
   width: 100%;
+
+  .Back_To_Top_Icon {
+    position: fixed;
+    bottom: 50px;
+    right: 10px;
+    z-index: 99;
+
+    color: white;
+
+    transition: 1s;
+    transform: translateX(100vh);
+  }
+
+  .Show_Back_To_Top {
+    transform:  translateX(0%);
+  }
 }
 
 ::-webkit-scrollbar {
@@ -36,7 +52,8 @@ ul {
 }
 
 ::-webkit-scrollbar-track {
-  box-shadow: rgb(0, 0, 0) 3px 3px 6px 0px inset, rgba(0, 0, 0,) -3px -3px 6px 1px inset;
+  box-shadow: rgb(0, 0, 0) 3px 3px 6px 0px inset,
+    rgba(0, 0, 0) -3px -3px 6px 1px inset;
   background: rgb(26, 26, 27);
 }
 

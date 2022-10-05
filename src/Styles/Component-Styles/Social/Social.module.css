@@ -55,8 +55,8 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  height: 150px;
-  width: 150px;
+  height: 80px;
+  width: 80px;
 }
 .Social_Container .Card .Imgae__Title_Container .Image_Container .Social_Image {
   height: 100%;
@@ -90,11 +90,5 @@
   }
   .Social_Container .Card {
     width: 100%;
-  }
-}
-@media only screen and (max-width: 450px) {
-  .Social_Container .Card .Imgae__Title_Container .Image_Container {
-    height: 80px;
-    width: 80px;
   }
 }/*# sourceMappingURL=Social.module.css.map */
