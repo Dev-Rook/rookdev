@@ -7,20 +7,13 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import InsertLinkIcon from "@mui/icons-material/InsertLink";
 
 // import HeroSlider from "../../Components/Sliders/Hero-Slider/HeroSlider";
+import Tech from "../../../Components/Data/Technology-Data/Tech";
 
 const Hero = () => {
   return (
     <div className={Styles.Hero}>
       {/* <HeroSlider /> */}
-      {/* <div className={Styles.Hero_Board}></div> */}
-      <div className={Styles.Content_Box}>
-        {/* <p className={Styles.Small_Text}>Hi, I'm</p> */}
-        <div className={Styles.Large_Text}>
-          Dev <span className={Styles.Red_R}>R</span>ook
-        </div>
-        {/* <p className={Styles.Small_Text}>React Developer</p> */}
-        {/* <button className={Styles.Contact_Button}>Contact</button> */}
-      </div>
+      <div className={Styles.Content_Box}></div>
 
       <div className={Styles.Info}>
         <div className={Styles.Info_Section}>
@@ -34,6 +27,8 @@ const Hero = () => {
             to develop projects that align with modern UI/UX standards.
           </div>
         </div>
+
+        <Tech />
       </div>
     </div>
   );

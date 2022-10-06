@@ -33,7 +33,7 @@ ul {
   right: 10px;
   z-index: 99;
   color: white;
-  transition: 1s;
+  transition: 0.5s;
   transform: translateX(100vh);
 }
 .App .Show_Back_To_Top {

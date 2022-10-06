@@ -3,7 +3,7 @@ import Styles from "../../Styles/Page-Styles/Landing/Landing.module.css";
 
 import { Link } from "react-router-dom";
 
-// import Hero from "../_Page-Sections_/Hero/Hero";
+import Hero from "../_Page-Sections_/Hero/Hero";
 import Featured from "../../Components/Data/Project-Data/Featured-Projects/Featured";
 import OtherProjects from "../../Components/Data/Project-Data/Other-Projects/OtherProjects";
 import Experience from "../../Components/Data/Experience-Data/Experience";
@@ -12,12 +12,12 @@ import Social from "../../Components/Data/Social-Data/Social";
 const Landing = () => {
   return (
     <div className={Styles.Landing}>
-      {/* <Hero /> */}
 
       <h3 className={Styles.Page_Title}>Dashboard</h3>
+      <Hero />
 
       <div className={Styles.Tech_Stack_Container}>
-        
+
       </div>
 
       <Featured />
