@@ -36,24 +36,24 @@ const Tech = () => {
         mousewheel={true}
         className={Styles.Swiper}
         breakpoints={{
-          360: {
+          320: {
             width: 360,
-            slidesPerView: 1,
+            slidesPerView: 2,
             spaceBetween: 10,
           },
-          380: {
+          360: {
             width: 380,
-            slidesPerView: 1.2,
+            slidesPerView: 2,
             spaceBetween: 10,
           },
           480: {
             width: 480,
-            slidesPerView: 1.5,
+            slidesPerView: 3,
             spaceBetween: 10,
           },
           768: {
             width: 768,
-            slidesPerView: 2,
+            slidesPerView: 3,
             spaceBetween: 10,
           },
           1920: {
