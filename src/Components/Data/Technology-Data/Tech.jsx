@@ -19,13 +19,13 @@ const Tech = () => {
   const [cardData, setCardData] = useState(TechData);
   return (
     <div className={Styles.Technology_Container}>
-      <h3 className={Styles.Slider_Title}>Technology</h3>
+      <h3 className={Styles.Slider_Title}>Technologies Used</h3>
 
       <Swiper
         speed={800}
         modules={[Navigation, FreeMode, Mousewheel, Autoplay]}
         autoplay={{
-          delay: 2000,
+          delay: 4000,
           disableOnInteraction: false,
         }}
         grabCursor={true}
@@ -58,17 +58,28 @@ const Tech = () => {
           },
           1920: {
             width: 1920,
-            slidesPerView: 5,
+            slidesPerView: 7,
             spaceBetween: 0,
           },
         }}
       >
         {cardData.map((slide) => {
-          const { id, Title, Image, Description, Stacks, Links } = slide;
+          const { id, Name, Image } = slide;
 
           return (
             <SwiperSlide className={Styles.Slide}>
-              <div className={Styles.Card} key={id}></div>
+              <div className={Styles.Card} key={id}>
+              <div className={Styles.Imgae__Title_Container}>
+                  <div className={Styles.Image_Container}>
+                    <img
+                      src={Image}
+                      alt={"WebsiteImage"}
+                      className={Styles.Website_Image}
+                    />
+                  </div>
+                  <h3 className={Styles.Name}>{Name}</h3>
+                </div>
+              </div>
             </SwiperSlide>
           );
         })}
