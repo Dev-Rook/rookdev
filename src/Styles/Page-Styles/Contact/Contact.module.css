@@ -25,7 +25,7 @@
   flex-direction: column;
   margin: auto;
   gap: 20px;
-  width: 100%;
+  width: 900px;
 }
 .Contact .Contact_Form .Input {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
@@ -58,6 +58,22 @@
 }
 .Contact .Contact_Form .Subject__Message .Message-Box::-webkit-input-placeholder {
   font-size: 18px;
+}
+.Contact .Contact_Form .Contact_Button {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: #319795;
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  transition: 0.5s;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
 }
 .Contact .Contact_Implore_Box {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
@@ -119,6 +135,19 @@
 
 @media only screen and (max-width: 1250px) {
   .Contact {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .Contact .Contact_Form {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .Contact .Contact_Form .Name__Email {
+    flex-direction: column;
+  }
+  .Contact .Contact_Form .Name__Email .Input {
     width: 100%;
   }
 }/*# sourceMappingURL=Contact.module.css.map */
