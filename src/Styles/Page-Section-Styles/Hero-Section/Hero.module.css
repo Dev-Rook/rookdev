@@ -47,7 +47,7 @@
 .Hero .Info {
   display: flex;
   flex-direction: column;
-  gap: 35px;
+  gap: 80px;
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
