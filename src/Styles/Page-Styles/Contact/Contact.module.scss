@@ -28,6 +28,57 @@
     margin-top: 100px;
   }
 
+  .Contact_Form {
+    display: flex;
+    flex-direction: column;
+
+    margin: auto;
+
+    gap: 20px;
+
+    width: 100%;
+
+    .Input {
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+        rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+      padding: 20px;
+      width: 50%;
+      border: none;
+      background-color: #2b2b2b;
+      outline: none;
+
+      color: white;
+      font-size: 18px;
+    }
+
+    .Input::-webkit-input-placeholder {
+      font-size: 16px;
+      color: #e3b261;
+    }
+
+    .Name__Email {
+      border: none;
+      display: flex;
+      gap: 10px;
+    }
+
+    .Subject__Message {
+      border: none;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      .Subject,
+      .Message_Box {
+        width: 100%;
+      }
+
+      .Message-Box::-webkit-input-placeholder {
+        font-size: 18px;
+      }
+    }
+  }
+
   .Contact_Implore_Box {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     display: flex;
