@@ -2,7 +2,7 @@ const FeaturedData = [
   {
     id: 1,
     Image: "https://avatars.githubusercontent.com/u/110010478?v=4",
-    Title: "Website Title",
+    Title: "Weather App",
     Category: "",
     Description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, maxime!",
@@ -14,14 +14,14 @@ const FeaturedData = [
       Stack5: "Scss",
     },
     Links: {
-      Code: "",
-      Demo: "",
+      Code: "https://github.com/Dev-Rook/improved-weather-app",
+      Demo: "https://vercel.com/devrook/improved-weather-app",
     },
   },
   {
     id: 2,
     Image: "",
-    Title: "Website Title",
+    Title: "Learn J22",
     Category: "",
     Description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, maxime!",
@@ -33,8 +33,8 @@ const FeaturedData = [
       Stack5: "Scss",
     },
     Links: {
-      Code: "",
-      Demo: "",
+      Code: "https://github.com/Dev-Rook/learn-j22",
+      Demo: "https://vercel.com/devrook/learn-j22",
     },
   },
   {
