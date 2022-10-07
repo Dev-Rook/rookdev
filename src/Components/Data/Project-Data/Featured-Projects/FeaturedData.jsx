@@ -15,7 +15,7 @@ const FeaturedData = [
     },
     Links: {
       Code: "https://github.com/Dev-Rook/improved-weather-app",
-      Demo: "https://vercel.com/devrook/improved-weather-app",
+      Demo: "https://improved-weather-app.vercel.app/",
     },
   },
   {
