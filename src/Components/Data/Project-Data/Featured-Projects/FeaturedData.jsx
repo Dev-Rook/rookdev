@@ -34,7 +34,7 @@ const FeaturedData = [
     },
     Links: {
       Code: "https://github.com/Dev-Rook/learn-j22",
-      Demo: "https://vercel.com/devrook/learn-j22",
+      Demo: "https://learnj22.vercel.app/",
     },
   },
   {
