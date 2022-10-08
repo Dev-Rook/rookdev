@@ -39,7 +39,7 @@ const OtherProjectsData = [
   },
   {
     id: 3,
-    Image: "https://avatars.githubusercontent.com/u/110010478?v=4",
+    Image: "https://github.com/Dev-Rook/rookdev/blob/master/src/Assests/Images/Website-Logos/Shop-App-Screenshot.jpg?raw=true",
     Title: "Shop App Clone",
     Category: "",
     Description:
