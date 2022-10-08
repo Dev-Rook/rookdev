@@ -1,17 +1,17 @@
 const OtherProjectsData = [
   {
     id: 1,
-    Image: "https://avatars.githubusercontent.com/u/110010478?v=4",
+    Image: "https://github.com/Dev-Rook/rookdev/blob/master/src/Assests/Images/Website-Logos/Basic-Todo-Screenshot.jpg?raw=true",
     Title: "Basic Todo App",
     Category: "",
     Description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, maxime!",
     Stacks: {
       Stack1: "React",
-      Stack2: "MUI",
-      Stack3: "Framer Motion",
-      Stack4: "AOS",
-      Stack5: "Scss",
+      Stack2: "",
+      Stack3: "",
+      Stack4: "",
+      Stack5: "",
     },
     Links: {
       Code: "https://github.com/Dev-Rook/todo-app-1",
@@ -20,17 +20,17 @@ const OtherProjectsData = [
   },
   {
     id: 2,
-    Image: "https://avatars.githubusercontent.com/u/110010478?v=4",
+    Image: "https://github.com/Dev-Rook/rookdev/blob/master/src/Assests/Images/Website-Logos/Thermostat-Screenshot.jpg?raw=true",
     Title: "Thermostat",
     Category: "",
     Description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, maxime!",
     Stacks: {
       Stack1: "React",
-      Stack2: "MUI",
-      Stack3: "Framer Motion",
-      Stack4: "AOS",
-      Stack5: "Scss",
+      Stack2: "",
+      Stack3: "",
+      Stack4: "",
+      Stack5: "",
     },
     Links: {
       Code: "https://github.com/Dev-Rook/temperature-control-app",
@@ -45,11 +45,11 @@ const OtherProjectsData = [
     Description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, maxime!",
     Stacks: {
-      Stack1: "React",
-      Stack2: "MUI",
-      Stack3: "Framer Motion",
-      Stack4: "AOS",
-      Stack5: "Scss",
+      Stack1: "Html",
+      Stack2: "Css",
+      Stack3: "JavaScript",
+      Stack4: "",
+      Stack5: "",
     },
     Links: {
       Code: "https://github.com/Dev-Rook/Shop.app-Clone",
@@ -58,17 +58,17 @@ const OtherProjectsData = [
   },
   {
     id: 4,
-    Image: "https://avatars.githubusercontent.com/u/110010478?v=4",
+    Image: "https://github.com/Dev-Rook/rookdev/blob/master/src/Assests/Images/Website-Logos/Movie-Filter-Screenshot.jpg?raw=true",
     Title: "Movie Filter",
     Category: "",
     Description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, maxime!",
     Stacks: {
       Stack1: "React",
-      Stack2: "MUI",
-      Stack3: "Framer Motion",
-      Stack4: "AOS",
-      Stack5: "Scss",
+      Stack2: "",
+      Stack3: "",
+      Stack4: "",
+      Stack5: "",
     },
     Links: {
       Code: "https://github.com/Dev-Rook/Movie-Filter-App",
@@ -77,17 +77,17 @@ const OtherProjectsData = [
   },
   {
     id: 5,
-    Image: "https://avatars.githubusercontent.com/u/110010478?v=4",
+    Image: "https://github.com/Dev-Rook/rookdev/blob/master/src/Assests/Images/Website-Logos/Netlify-Screenshot.jpg?raw=true",
     Title: "Netlify Site Overview",
     Category: "",
     Description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, maxime!",
     Stacks: {
-      Stack1: "React",
-      Stack2: "MUI",
-      Stack3: "Framer Motion",
-      Stack4: "AOS",
-      Stack5: "Scss",
+      Stack1: "Html",
+      Stack2: "Css",
+      Stack3: "",
+      Stack4: "",
+      Stack5: "",
     },
     Links: {
       Code: "https://github.com/Dev-Rook/Netlify-Site-overview-page-Clone",
