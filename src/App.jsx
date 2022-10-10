@@ -9,6 +9,7 @@ import Contact from "./Views/Contact/Contact";
 import DevLogs from "./Views/Dev-Logs/DevLogs";
 import Footer from "./Components/Main/Footer/Footer";
 import NavigationIcon from '@mui/icons-material/Navigation';
+import ProjectDetails from "./Views/_Dynamic-Routes_/ProjectDetails";
 
 
 function App() {
@@ -40,6 +41,8 @@ function App() {
           <Route path={"Portfolio"} element={<Portfolio />} />
           <Route path={"Contact"} element={<Contact />} />
           <Route path={"DevLogs"} element={<DevLogs />} />
+
+          <Route path={"/Portfolio/:id"} element={<ProjectDetails />} />
         </Routes>
 
         <NavigationIcon

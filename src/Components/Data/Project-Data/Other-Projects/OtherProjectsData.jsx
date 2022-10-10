@@ -8,7 +8,7 @@ const OtherProjectsData = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, maxime!",
     Stacks: {
       Stack1: "React",
-      Stack2: "",
+      Stack2: "JavaScript",
       Stack3: "",
       Stack4: "",
       Stack5: "",
@@ -27,7 +27,7 @@ const OtherProjectsData = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, maxime!",
     Stacks: {
       Stack1: "React",
-      Stack2: "",
+      Stack2: "JavaScript",
       Stack3: "",
       Stack4: "",
       Stack5: "",
@@ -65,7 +65,7 @@ const OtherProjectsData = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, maxime!",
     Stacks: {
       Stack1: "React",
-      Stack2: "",
+      Stack2: "JavaScript",
       Stack3: "",
       Stack4: "",
       Stack5: "",
@@ -77,6 +77,25 @@ const OtherProjectsData = [
   },
   {
     id: 5,
+    Image: "https://github.com/Dev-Rook/rookdev/blob/master/src/Assests/Images/Website-Logos/Movie-Filter-Screenshot.jpg?raw=true",
+    Title: "Snapchat Landing Page Clone",
+    Category: "",
+    Description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, maxime!",
+    Stacks: {
+      Stack1: "React",
+      Stack2: "JavaScript",
+      Stack3: "",
+      Stack4: "",
+      Stack5: "",
+    },
+    Links: {
+      Code: "https://github.com/Dev-Rook/snapchat-clone",
+      Demo: "https://dev-rook-snapchat-clone.netlify.app/",
+    },
+  },
+  {
+    id: 6,
     Image: "https://github.com/Dev-Rook/rookdev/blob/master/src/Assests/Images/Website-Logos/Netlify-Screenshot.jpg?raw=true",
     Title: "Netlify Site Overview",
     Category: "",

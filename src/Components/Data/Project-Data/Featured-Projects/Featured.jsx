@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import Styles from "../../../../Styles/Pagination-Styles/General/Pagination.module.css";
 
 // import { Howler } from "howler";
@@ -26,14 +27,14 @@ const Featured = () => {
   // const unPaginate = () => {
   //   setShowLessButton((prev) => !prev);
   // };
-    
+
   const moreThanSix = (e) => {
-    if(visible > 3) {
-      setShowLessButton((prev) => !prev)
+    if (visible > 3) {
+      setShowLessButton((prev) => !prev);
       // setShowLessButton(true)
-      console.log("Is working 😎")
+      console.log("Is working 😎");
     }
-  }
+  };
 
   const doubleFunction = () => {
     showMoreCards();
@@ -41,27 +42,31 @@ const Featured = () => {
     moreThanSix();
   };
 
-
   const showLessCards = () => {
     setVisible((Cards) => Cards - 3);
   };
 
+
   return (
     <div className={Styles.Paginate_Container}>
       <h2 className={Styles.Section_Title}>Projects</h2>
-      <h2 className={Styles.Section_Description}>These are a handful featured projects</h2>
+      <h2 className={Styles.Section_Description}>
+        These are a handful featured projects
+      </h2>
       {cardData.slice(0, visible).map((Card) => {
         const { id, Image, Title, Description, Stacks, Links } = Card;
 
         return (
           <div className={Styles.Card} key={id}>
-            <div className={Styles.Imgae_Container}>
-              <img
-                src={Image}
-                alt={"WebsiteImage"}
-                className={Styles.Website_Image}
-              />
-            </div>
+            <Link to={`/Portfolio/${id}`}>
+              <div className={Styles.Imgae_Container}>
+                <img
+                  src={Image}
+                  alt={"WebsiteImage"}
+                  className={Styles.Website_Image}
+                />
+              </div>
+            </Link>
             <div className={Styles.Website_Information_Box}>
               <h3 className={Styles.Website_Title}>{Title}</h3>
               <div className={Styles.Website_Description}>{Description}</div>
@@ -96,9 +101,7 @@ const Featured = () => {
       })}
 
       <div className={Styles.Card_Control_Box}>
-        <div 
-        onClick={doubleFunction} 
-        className={Styles.Show_More_Button}>
+        <div onClick={doubleFunction} className={Styles.Show_More_Button}>
           Show More
           {/* <KeyboardArrowRightIcon sx={{ color: "#e3b261", fontSize: 30 }} /> */}
         </div>

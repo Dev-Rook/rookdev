@@ -154,7 +154,6 @@
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  display: none;
 }
 .Paginate_Container .Card_Control_Box .Show_More_Button {
   background-color: rgba(0, 0, 0, 0.4);
