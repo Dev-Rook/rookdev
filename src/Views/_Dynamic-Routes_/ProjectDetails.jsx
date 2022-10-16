@@ -5,6 +5,7 @@ import Styles from "../../Styles/Page-Styles/Landing/Landing.module.css";
 
 const ProjectDetails = () => {
   const { id } = useParams();
+  // let id = parseInt(id)
   console.log(useParams)
 
   return (
