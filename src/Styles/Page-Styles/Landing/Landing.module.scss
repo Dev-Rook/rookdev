@@ -100,10 +100,11 @@
   }
 }
 
-
 .Details {
   border: 1px solid black;
   display: flex;
+  flex-direction: column;
+
   height: 100vh;
   width: 100%;
 
@@ -111,6 +112,20 @@
   align-items: center;
 
   color: white;
+
+  .Container {
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+
+    height: 200px;
+    width: 100%;
+
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+  }
 }
 
 // Media Queries Start

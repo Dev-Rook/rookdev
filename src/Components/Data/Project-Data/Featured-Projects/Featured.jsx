@@ -58,7 +58,7 @@ const Featured = () => {
 
         return (
           <div className={Styles.Card} key={id}>
-            <Link to={`/Portfolio/${id}`}>
+            {/* <Link to={`/Portfolio/ ` + Card.id}> */}
               <div className={Styles.Imgae_Container}>
                 <img
                   src={Image}
@@ -66,7 +66,7 @@ const Featured = () => {
                   className={Styles.Website_Image}
                 />
               </div>
-            </Link>
+            {/* </Link> */}
             <div className={Styles.Website_Information_Box}>
               <h3 className={Styles.Website_Title}>{Title}</h3>
               <div className={Styles.Website_Description}>{Description}</div>
